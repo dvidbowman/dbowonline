@@ -134,7 +134,7 @@ const WebDev: NextPage = () => {
             </div>
             <div className="py-16">
               <Link
-                href="https://google.com"
+                href="https://github.com/dvidbowman/dbowonline"
                 rel="norefferer"
                 target="_blank"
                 className="hover:text-blue-300"

@@ -8,7 +8,11 @@ export const Footer: React.FC = () => {
       <footer>
         <div className="h-20 bg-zinc-800 px-2 py-6 text-slight-off-white">
           <div className="flex justify-center space-x-4">
-            <Link href="https://google.com" rel="norefferer" target="_blank">
+            <Link
+              href="https://github.com/dvidbowman"
+              rel="norefferer"
+              target="_blank"
+            >
               <IconGitHub
                 size={32}
                 className="inline-block hover:text-blue-300"
