@@ -136,7 +136,7 @@ const Dissertation: NextPage = () => {
             </div>
             <div className="py-16">
               <Link
-                href="https://google.com"
+                href="https://github.com/dvidbowman/DissertationAndroidApp"
                 rel="norefferer"
                 target="_blank"
                 className="hover:text-blue-300"
@@ -146,7 +146,7 @@ const Dissertation: NextPage = () => {
                   className="inline-block hover:text-blue-300"
                 />
                 <h1 className="mx-4 inline-block underline decoration-blue-300">
-                  You can find the code for this project here!
+                  You can find the code for main application here!
                 </h1>
               </Link>
             </div>
