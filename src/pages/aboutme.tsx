@@ -203,11 +203,9 @@ const AboutMe: NextPage = () => {
                   Toubkal
                 </Link>
                 , the highest point in North Africa at a height of 4,167m -
-                almost 5x the height of the tallest in Northern Ireland! It can
-                be hard to even consider the Mournes as mountains after seeing
-                what there is to experience elsewhere in the world.
+                almost 5x the height of the tallest in Northern Ireland!
               </p>
-              <div className="flex flex-col items-center justify-between md:flex-row">
+              <div className="flex flex-col items-center justify-between lg:flex-row">
                 <Image
                   src={atlasOne}
                   alt="Atlas Mountains"
@@ -215,7 +213,6 @@ const AboutMe: NextPage = () => {
                   width={500}
                   className="m-2"
                 />
-
                 <Image
                   src={toubkalSummit}
                   alt="Group at Toubkal summit"
@@ -231,7 +228,6 @@ const AboutMe: NextPage = () => {
                   className="m-2"
                 />
               </div>
-              <p className="py-8"></p>
             </div>
           </div>
         </section>

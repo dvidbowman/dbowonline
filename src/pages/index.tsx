@@ -68,7 +68,7 @@ export default function Home() {
           </div>
 
           <div className="w-full py-12">
-            <div className="grid grid-flow-row-dense grid-cols-1 lg:grid-cols-3">
+            <div className="grid grid-flow-row-dense grid-cols-1 lg:grid-cols-2">
               {/*Column 1*/}
               <div className="px-4 pb-4">
                 <Link href="/projects/dissertation">
@@ -95,21 +95,6 @@ export default function Home() {
                     <p className="pt-3 text-slight-off-white">
                       I built this website myself using Next.js, Tailwind and
                       TypeScript.
-                    </p>
-                  </div>
-                </Link>
-              </div>
-
-              {/*Column 3 */}
-              <div className="px-4">
-                <Link href="/projects/holder">
-                  <div className="bg-zinc-800 px-12 py-4 hover:bg-zinc-700 md:pt-8 lg:h-64">
-                    <h1 className="text-left text-2xl font-medium text-slight-off-white underline decoration-blue-300 underline-offset-4">
-                      another project
-                    </h1>
-                    <p className="pt-3 text-slight-off-white">
-                      wow i can't think of three projects i've done i must be
-                      good
                     </p>
                   </div>
                 </Link>
