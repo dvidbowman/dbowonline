@@ -8,7 +8,6 @@ import profilePicture from "../../public/profile.jpg";
 import coursework from "../../public/alevelcourseworksc.png";
 import mournes from "../../public/mournes.jpg";
 import davidMournes from "../../public/davidmournes.jpg";
-import davidAtlas from "../../public/atlas.jpg";
 import toubkalSummit from "../../public/toubkalsummit.jpg";
 import atlasOne from "../../public/atlasone.png";
 import atlasTwo from "../../public/atlastwo.png";

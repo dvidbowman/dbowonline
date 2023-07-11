@@ -25,7 +25,7 @@ const MyProjects: NextPage = () => {
             </Link>
 
             <p className="text-xl font-light md:text-3xl">
-              my final year project at university: an android mobile application
+              My final year project at university; an Android mobile application
               used to support the colorimetric analysis of "smart wound
               dressings" developed by the QUB chemistry department
             </p>
@@ -38,7 +38,7 @@ const MyProjects: NextPage = () => {
             </Link>
             <p className="text-xl font-light md:text-3xl">
               I created this website from scratch using Next.js and Tailwind
-              css, written in TypeScript
+              CSS, written in TypeScript
             </p>
           </div>
         </section>

@@ -1,5 +1,3 @@
-import Image from "next/image";
-import Logo from "../../../../public/Logo.jpg";
 import Link from "next/link";
 import IconMenu from "~/icons/IconMenu";
 import IconClose from "~/icons/IconClose";
@@ -54,8 +52,8 @@ export const Navbar: React.FC = () => {
       <div
         className={
           navMenuOpen
-            ? "fixed left-0 top-24 h-screen w-full bg-[#dbdbdb] bg-scroll px-14 pt-8 duration-300 ease-in md:hidden"
-            : "fixed left-[-100%] top-24 w-full px-14 pt-8 duration-300 ease-in"
+            ? "fixed left-0 h-screen w-full bg-[#dbdbdb] px-14 pt-8 duration-300 ease-in md:hidden"
+            : "fixed left-[-100%] h-screen w-full px-14 pt-8 duration-300 ease-in"
         }
       >
         <div className="flex w-full items-center justify-end">

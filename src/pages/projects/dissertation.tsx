@@ -94,10 +94,10 @@ const Dissertation: NextPage = () => {
                 a near-endless list of problems; how will it know where the
                 bandage is? What effect will lighting have on the analysis? Are
                 different cameras going to change results? It soon became clear
-                that I started this project aiming a bit too high, so the focus
-                was retargeted to research. Let's instead make a very basic app
-                that has some primary functions with the goal of analysing the
-                lighting's effect on results.
+                that I would have to focus more on researching the problem
+                before I could create a robust solution. Let's instead make a
+                very basic app that has some primary functions with the goal of
+                analysing the lighting's effect on results.
               </p>
               <p className="pt-4">
                 I got the basic bandage detection to work after some wrestling

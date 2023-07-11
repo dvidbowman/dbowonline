@@ -121,7 +121,7 @@ const WebDev: NextPage = () => {
               <h1 className="text-2xl font-semibold md:text-4xl">
                 what i'm doing next
               </h1>
-              <p className="py-4">
+              <p className="pt-4">
                 My main focus at the beginning was just to make something
                 functional and relatively nice to look at. I think I achieved
                 that goal, but there are still many things I'd like to try, like
@@ -129,9 +129,13 @@ const WebDev: NextPage = () => {
                 With enough time I'd also like to make the layout as responsive
                 as possible - it does pretty well with different screen sizes
                 for the most part, but it still needs a bit of fine tuning.
+              </p>
+              <p className="py-4">
                 Aside from that, I will probably separate the 'about' page into
-                different pages. I'd like to say a lot more on the topics, but
-                right now it feels a bit cluttered.
+                different pages as I'd love to say more on the topics, but right
+                now it feels a bit cluttered. The same goes for the projects
+                here. I want to make them a bit more detailed, as well as add
+                some more as time goes on.
               </p>
             </div>
             <div className="py-16">

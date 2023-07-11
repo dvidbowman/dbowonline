@@ -77,7 +77,7 @@ export default function Home() {
                       dissertation
                     </h1>
                     <p className="pt-3 text-slight-off-white">
-                      My final year project at university: an Android mobile
+                      My final year project at university; an Android mobile
                       application written in Java, using OpenCV for scientific
                       analysis of images
                     </p>
@@ -93,8 +93,8 @@ export default function Home() {
                       this website
                     </h1>
                     <p className="pt-3 text-slight-off-white">
-                      I built this website myself using Next.js, Tailwind and
-                      TypeScript.
+                      I built this website myself using Next.js, Tailwind CSS
+                      and TypeScript.
                     </p>
                   </div>
                 </Link>
