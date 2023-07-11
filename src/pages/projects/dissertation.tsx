@@ -7,14 +7,16 @@ const Dissertation: NextPage = () => {
   return (
     <>
       <Head>
-        <title>dissertation - david.online</title>
+        <title>dissertation - david.</title>
       </Head>
       <main className="mx-12 md:mx-24">
         <section className="border-b border-zinc-800">
           <div className="pb-8 pt-0 md:py-16">
             <h1 className="text-center text-5xl font-bold text-zinc-800 md:text-left">
-              my projects {">"}{" "}
-              <span className="inline-block font-normal">my dissertation</span>
+              my projects{" "}
+              <span className="inline-block font-normal">
+                <span className="text-blue-300">{">"} </span>my dissertation
+              </span>
             </h1>
           </div>
         </section>

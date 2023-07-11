@@ -17,7 +17,7 @@ const AboutMe: NextPage = () => {
   return (
     <>
       <Head>
-        <title>about - david.online</title>
+        <title>about - david.</title>
       </Head>
       <main className="mx-12 md:mx-24">
         <section className="border-b border-zinc-800">
@@ -54,7 +54,7 @@ const AboutMe: NextPage = () => {
                 it. I remember we started learning with Microsoft VBA and Logo
                 to create little quizzes and drawings.
               </p>
-              <p className="py-4">
+              <p className="pt-4">
                 A few years later and I was learning the basics of
                 object-oriented programming at A-Levels using C# for Windows
                 Forms, with MySQL for some data storage and querying. These
@@ -93,11 +93,10 @@ const AboutMe: NextPage = () => {
             <h1 className="text-3xl font-bold md:text-4xl">music</h1>
             <div className="md:mx-4">
               <p className="pt-8">
-                If I had to pick my favourite thing, it would probably be music.
-                Over the last 7 or so years it has become a big part of my life
-                - I listen to, look for, or even try to make my own music every
-                day. Some of my biggest inspirations in life are musicians and
-                bands, like{" "}
+                Music is another one of my biggest passions. Over the last 7 or
+                so years it has become a big part of my life - I listen to, look
+                for, or even try to make my own music every day. Some of my
+                biggest inspirations in life are musicians and bands, like{" "}
                 <Link
                   href="https://twitter.com/iameden"
                   className="font-semibold"

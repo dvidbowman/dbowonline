@@ -7,14 +7,16 @@ const WebDev: NextPage = () => {
   return (
     <>
       <Head>
-        <title>web dev - david.online</title>
+        <title>web dev - david.</title>
       </Head>
       <main className="mx-12 md:mx-24">
         <section className="flex flex-row border-b border-zinc-800">
           <div className="pb-8 pt-0 md:py-16">
             <h1 className="text-center text-5xl font-bold text-zinc-800 md:text-left">
-              my projects {">"}{" "}
-              <span className="inline-block font-normal">this website</span>
+              my projects{" "}
+              <span className="inline-block font-normal">
+                <span className="text-blue-300">{">"} </span>this website
+              </span>
             </h1>
           </div>
           <div className="pb-8"></div>

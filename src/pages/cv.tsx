@@ -5,7 +5,7 @@ const MyCV: NextPage = () => {
   return (
     <>
       <Head>
-        <title>cv - david.online</title>
+        <title>cv - david.</title>
       </Head>
       <main className="mx-12 flex min-h-screen flex-col md:mx-24">
         <section className="border-b border-zinc-800">

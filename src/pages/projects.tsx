@@ -6,7 +6,7 @@ const MyProjects: NextPage = () => {
   return (
     <>
       <Head>
-        <title>projects - david.online</title>
+        <title>projects - david.</title>
       </Head>
       <main className="flex min-h-screen flex-col">
         <section className="mx-24 border-b border-zinc-800">

@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>david.online</title>
+        <title>davidbowman.dev</title>
       </Head>
       <main className="mx-12 items-center justify-center md:mx-20">
         <section className="grid w-full grid-flow-row-dense items-center pb-12 pt-8 sm:grid-cols-1 md:grid-cols-3">
