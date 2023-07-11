@@ -36,11 +36,13 @@ const AboutMe: NextPage = () => {
               />
             </div>
           </div>
-          <div className="pt-6 md:pt-12">
-            <p className="text-center text-2xl font-light md:text-left md:text-4xl">
+          <div className="pt-6 text-center text-2xl font-light md:pt-12 md:text-left md:text-4xl">
+            <p className="pb-4">
               I'm a 22-year-old computer science graduate from Belfast, Northern
-              Ireland <br />I love learning new things, which extends to
-              everything that I do
+              Ireland
+            </p>
+            <p>
+              I love learning new things, which extends to everything that I do
             </p>
           </div>
           <div className="py-12 text-xl font-light md:text-2xl">
@@ -62,7 +64,7 @@ const AboutMe: NextPage = () => {
                 <span className="italic">exactly</span> where I wanted to end
                 up...
               </p>
-              <div className="flex flex-col items-center justify-between pt-4 md:flex-row lg:pt-12">
+              <div className="flex flex-col items-center pt-4 md:pt-8 lg:flex-row lg:pt-12">
                 <Image
                   src={coursework}
                   alt="coursework"
@@ -70,9 +72,9 @@ const AboutMe: NextPage = () => {
                   height="380"
                   className="md:mx-[10%]"
                 />
-                <p className="pb-6 pt-4 text-center text-xl italic md:mx-[10%] md:pt-0 md:text-left">
-                  one of the forms in my A-Level Coursework - can you <br />
-                  tell I like blue and grey?
+                <p className="pb-6 pt-4 text-center text-xl italic md:text-left">
+                  one of the forms in my A-Level Coursework - can you tell I
+                  like blue and grey?
                 </p>
               </div>
               <p className="pt-8">

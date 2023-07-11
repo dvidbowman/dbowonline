@@ -94,7 +94,7 @@ export default function Home() {
                     </h1>
                     <p className="pt-3 text-slight-off-white">
                       I built this website myself using Next.js, Tailwind CSS
-                      and TypeScript.
+                      and TypeScript
                     </p>
                   </div>
                 </Link>
