@@ -2,8 +2,15 @@ import Head from "next/head";
 import Image from "next/image";
 import profilePicture from "../../public/profile.jpg";
 import Link from "next/link";
+import uk from "../../public/ukmap.png";
+import { useState } from "react";
 
 export default function Home() {
+  const [locationHovered, setLocationHovered] = useState(false);
+  const location = () => {
+    setLocationHovered(!locationHovered);
+  };
+
   return (
     <>
       <Head>
@@ -25,10 +32,21 @@ export default function Home() {
             <h1 className="py-2 text-center text-[30px] font-light md:text-left md:text-[2.5vmax]">
               a software developer from
               <br />
-              <p className="underline decoration-blue-300 decoration-2 underline-offset-4">
+              <p
+                className="underline decoration-blue-300 decoration-2 underline-offset-4"
+                onMouseEnter={() => setLocationHovered(true)}
+                onMouseLeave={() => setLocationHovered(false)}
+              >
                 belfast, northern ireland
               </p>
             </h1>
+            {/*<Image
+              className={locationHovered ? "visible" : "hidden"}
+              src={uk}
+              alt="Map of United Kingdom"
+              width={200}
+              height={200}
+            /> */}
           </div>
         </section>
 
