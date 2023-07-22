@@ -6,18 +6,13 @@ import uk from "../../public/ukmap.png";
 import { useState } from "react";
 
 export default function Home() {
-  const [locationHovered, setLocationHovered] = useState(false);
-  const location = () => {
-    setLocationHovered(!locationHovered);
-  };
-
   return (
     <>
       <Head>
         <title>davidbowman.dev</title>
       </Head>
-      <main className="mx-12 items-center justify-center md:mx-20">
-        <section className="grid w-full grid-flow-row-dense items-center pb-12 pt-8 sm:grid-cols-1 md:grid-cols-3">
+      <main className="mx-12 animate-fade-in-down items-center justify-center md:mx-20">
+        <section className="grid w-full grid-flow-row-dense items-center pb-12 pt-8 sm:grid-cols-1 md:grid-cols-3 ">
           <div>
             <Image
               className="max-h-72 object-cover md:min-h-[40vw]"
@@ -32,21 +27,10 @@ export default function Home() {
             <h1 className="py-2 text-center text-[30px] font-light md:text-left md:text-[2.5vmax]">
               a software developer from
               <br />
-              <p
-                className="underline decoration-blue-300 decoration-2 underline-offset-4"
-                onMouseEnter={() => setLocationHovered(true)}
-                onMouseLeave={() => setLocationHovered(false)}
-              >
+              <p className="underline decoration-blue-300 decoration-2 underline-offset-4">
                 belfast, northern ireland
               </p>
             </h1>
-            {/*<Image
-              className={locationHovered ? "visible" : "hidden"}
-              src={uk}
-              alt="Map of United Kingdom"
-              width={200}
-              height={200}
-            /> */}
           </div>
         </section>
 

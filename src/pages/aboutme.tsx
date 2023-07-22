@@ -19,14 +19,14 @@ const AboutMe: NextPage = () => {
         <title>about - david.</title>
       </Head>
       <main className="mx-12 md:mx-24">
-        <section className="border-b border-zinc-800">
+        <section className="animate-title-fade-in border-b border-zinc-800">
           <div className="pb-8 pt-0 md:py-16">
             <h1 className="text-center text-5xl font-bold text-zinc-800 md:text-left">
               about me
             </h1>
           </div>
         </section>
-        <section className="mt-10 md:mt-16">
+        <section className="mt-10 animate-fade-in-down md:mt-16">
           <div className="grid grid-flow-row-dense items-center sm:grid-cols-1 md:grid-cols-3">
             <div>
               <Image

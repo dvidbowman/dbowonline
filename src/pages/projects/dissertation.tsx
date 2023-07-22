@@ -10,7 +10,7 @@ const Dissertation: NextPage = () => {
         <title>dissertation - david.</title>
       </Head>
       <main className="mx-12 md:mx-24">
-        <section className="border-b border-zinc-800">
+        <section className="animate-title-fade-in border-b border-zinc-800">
           <div className="pb-8 pt-0 md:py-16">
             <h1 className="text-center text-5xl font-bold text-zinc-800 md:text-left">
               my projects{" "}
@@ -20,7 +20,7 @@ const Dissertation: NextPage = () => {
             </h1>
           </div>
         </section>
-        <section className="mt-10 text-xl font-light md:mt-16 md:text-2xl">
+        <section className="mt-10 animate-fade-in-down text-xl font-light md:mt-16 md:text-2xl">
           <div className="md:mx-4">
             <div className="mt-6 flex w-full flex-col md:flex-row">
               <div className="md:w-[60%]">
@@ -141,7 +141,7 @@ const Dissertation: NextPage = () => {
                 href="https://github.com/dvidbowman/DissertationAndroidApp"
                 rel="norefferer"
                 target="_blank"
-                className="hover:text-blue-300"
+                className="duration-[150ms] ease-in-out hover:text-blue-300"
               >
                 <IconGitHub
                   size={32}

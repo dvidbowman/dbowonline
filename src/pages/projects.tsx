@@ -9,17 +9,17 @@ const MyProjects: NextPage = () => {
         <title>projects - david.</title>
       </Head>
       <main className="mx-12 flex min-h-screen flex-col md:mx-24">
-        <section className="border-b border-zinc-800">
+        <section className="animate-title-fade-in border-b border-zinc-800">
           <div className="pb-8 pt-0 md:py-16">
             <h1 className="text-center text-5xl font-bold text-zinc-800 md:text-left">
               my projects
             </h1>
           </div>
         </section>
-        <section className="">
+        <section className="animate-fade-in-down">
           <div className="my-4 px-16 pb-8 pt-16">
             <Link href="/projects/dissertation">
-              <h1 className="pb-4 text-3xl text-zinc-800 underline decoration-blue-300 underline-offset-4 hover:text-blue-300 md:text-4xl">
+              <h1 className="pb-4 text-3xl text-zinc-800 underline decoration-blue-300 underline-offset-4 duration-[150ms] ease-in-out hover:text-blue-300 md:text-4xl">
                 dissertation
               </h1>
             </Link>
@@ -32,7 +32,7 @@ const MyProjects: NextPage = () => {
           </div>
           <div className="my-4 px-16 py-8">
             <Link href="/projects/webdev">
-              <h1 className="pb-4 text-3xl text-zinc-800 underline decoration-blue-300 underline-offset-4 hover:text-blue-300 md:text-4xl">
+              <h1 className="pb-4 text-3xl text-zinc-800 underline decoration-blue-300 underline-offset-4 duration-[150ms] ease-in-out hover:text-blue-300 md:text-4xl">
                 this website
               </h1>
             </Link>
