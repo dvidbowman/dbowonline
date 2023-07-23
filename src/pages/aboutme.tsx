@@ -19,9 +19,9 @@ const AboutMe: NextPage = () => {
         <title>about - david.</title>
       </Head>
       <main className="mx-12 md:mx-24">
-        <section className="animate-title-fade-in border-b border-zinc-800">
+        <section className="animate-title-fade-in border-b border-zinc-800 dark:border-slight-off-white">
           <div className="pb-8 pt-0 md:py-16">
-            <h1 className="text-center text-5xl font-bold text-zinc-800 md:text-left">
+            <h1 className="text-center text-5xl font-bold md:text-left">
               about me
             </h1>
           </div>
@@ -100,21 +100,21 @@ const AboutMe: NextPage = () => {
                 biggest inspirations in life are musicians and bands, like{" "}
                 <Link
                   href="https://twitter.com/iameden"
-                  className="font-semibold"
+                  className="font-semibold duration-[150ms] ease-in-out hover:text-blue-300"
                 >
                   EDEN
                 </Link>
                 ,{" "}
                 <Link
                   href="https://twitter.com/iamnovoamor"
-                  className="font-semibold"
+                  className="font-semibold duration-[150ms] ease-in-out hover:text-blue-300"
                 >
                   Novo Amor
                 </Link>{" "}
                 and{" "}
                 <Link
                   href="https://twitter.com/HotMulligan"
-                  className="font-semibold"
+                  className="font-semibold duration-[150ms] ease-in-out hover:text-blue-300"
                 >
                   Hot Mulligan
                 </Link>
@@ -126,7 +126,7 @@ const AboutMe: NextPage = () => {
                 learning electronic music production using{" "}
                 <Link
                   href="https://www.ableton.com/en/live/"
-                  className="underline decoration-blue-300"
+                  className="underline decoration-blue-300 duration-[150ms] ease-in-out hover:text-blue-300"
                 >
                   Ableton Live 10
                 </Link>{" "}
@@ -198,7 +198,7 @@ const AboutMe: NextPage = () => {
                 we planned to reach the summit of{" "}
                 <Link
                   href="https://en.wikipedia.org/wiki/Toubkal"
-                  className="underline decoration-blue-300"
+                  className="underline decoration-blue-300 duration-[150ms] ease-in-out hover:text-blue-300"
                 >
                   Toubkal
                 </Link>

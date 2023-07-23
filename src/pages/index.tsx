@@ -64,7 +64,7 @@ export default function Home() {
 
         <section className="w-full">
           <div className="w-full justify-center text-left">
-            <h1 className="text-[30px] text-zinc-800 lg:text-[2.5vw]">
+            <h1 className="text-[30px] lg:text-[2.5vw]">
               some of my projects<span className="text-blue-300">:</span>
             </h1>
           </div>

@@ -8,10 +8,9 @@ type LayoutProps = {
 const Layout: React.FC<LayoutProps> = ({ children }) => {
   return (
     <>
-      {/*bg-gradient-to-b from-slight-off-white to-[#cecece] */}
       <div
         id="app"
-        className={`flex h-full min-h-[100vh] flex-col bg-slight-off-white`}
+        className={`flex h-full min-h-[100vh] flex-col bg-slight-off-white text-zinc-800 dark:bg-zinc-900 dark:text-slight-off-white`}
       >
         <header className="flex items-center justify-between">
           <Navbar />

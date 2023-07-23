@@ -10,9 +10,9 @@ const Dissertation: NextPage = () => {
         <title>dissertation - david.</title>
       </Head>
       <main className="mx-12 md:mx-24">
-        <section className="animate-title-fade-in border-b border-zinc-800">
+        <section className="animate-title-fade-in border-b border-zinc-800 dark:border-slight-off-white">
           <div className="pb-8 pt-0 md:py-16">
-            <h1 className="text-center text-5xl font-bold text-zinc-800 md:text-left">
+            <h1 className="text-center text-5xl font-bold md:text-left">
               my projects{" "}
               <span className="inline-block font-normal">
                 <span className="text-blue-300">{">"} </span>my dissertation

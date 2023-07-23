@@ -1,6 +1,9 @@
 import Link from "next/link";
 import IconMenu from "~/icons/IconMenu";
 import IconClose from "~/icons/IconClose";
+import IconLightMode from "~/icons/IconLightMode";
+import IconDarkMode from "~/icons/IconDarkMode";
+import ThemeSwitch from "~/components/ThemeSwitch";
 import { useState } from "react";
 
 export const Navbar: React.FC = () => {
@@ -11,19 +14,19 @@ export const Navbar: React.FC = () => {
 
   return (
     <nav className="bg-gray mx-10 h-24 w-full md:mx-20">
-      <div className="flex h-full w-full items-center justify-between px-4 md:px-[vw]">
+      <div className="flex h-full w-full items-center justify-between px-4 text-zinc-800 dark:text-slight-off-white md:px-[vw]">
         <div className="flex h-full w-1/3 items-center">
           <Link href="/" className="animate-fade-in-right">
-            <h1 className="px-4 text-[2rem] font-bold tracking-tight text-zinc-800 duration-[50ms] ease-in-out hover:scale-105">
+            <h1 className="px-4 text-[2rem] font-bold tracking-tight duration-[50ms] ease-in-out hover:scale-105">
               david
-              <span className="text-blue-300 duration-150 ease-in-out hover:text-zinc-800">
+              <span className="text-blue-300 duration-150 ease-in-out hover:text-zinc-800 dark:hover:text-slight-off-white">
                 .
               </span>
             </h1>
           </Link>
         </div>
 
-        <div className="w-items-center h-full w-2/3 animate-fade-in-left justify-end text-xl text-zinc-800 sm:hidden md:flex">
+        <div className="w-items-center h-full w-2/3 animate-fade-in-left justify-end text-xl sm:hidden md:flex">
           <ul className="hidden items-center sm:flex">
             <Link href="/">
               <li className="border-b-blue-300 px-4 duration-[50ms] ease-out hover:scale-110 hover:border-b-2">
@@ -45,12 +48,15 @@ export const Navbar: React.FC = () => {
                 cv
               </li>
             </Link>
+            <div className="px-4 pt-3">
+              <ThemeSwitch />
+            </div>
           </ul>
         </div>
 
         <div
           onClick={navMenu}
-          className="cursor-pointer text-zinc-800 hover:text-blue-300 md:hidden"
+          className="cursor-pointer text-zinc-800 hover:text-blue-300 dark:text-slight-off-white md:hidden"
         >
           <IconMenu size={32} />
         </div>
@@ -58,14 +64,14 @@ export const Navbar: React.FC = () => {
       <div
         className={
           navMenuOpen
-            ? "fixed left-0 top-0 h-screen w-[60%] bg-slight-off-white px-4 pt-8 duration-300 md:hidden"
+            ? "fixed left-0 top-0 h-screen w-[60%] bg-slight-off-white px-4 pt-8 duration-300 dark:bg-zinc-800 md:hidden"
             : "fixed left-[-100%] top-0 h-screen w-[60%] px-14 pt-8 duration-300"
         }
       >
         <div className="flex w-full items-center justify-end">
           <div
             onClick={navMenu}
-            className="animate-fade-in-right cursor-pointer pr-4 text-zinc-800 hover:text-blue-300"
+            className="animate-fade-in-right cursor-pointer pr-4 text-zinc-800 hover:text-blue-300 dark:text-slight-off-white"
           >
             <IconClose size={32} />
           </div>
@@ -105,6 +111,9 @@ export const Navbar: React.FC = () => {
                 cv
               </li>
             </Link>
+            <div className="pl-3 pt-3">
+              <ThemeSwitch />
+            </div>
           </ul>
         </div>
       </div>
