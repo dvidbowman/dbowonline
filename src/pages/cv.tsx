@@ -10,7 +10,9 @@ const MyCV: NextPage = () => {
       <main className="mx-12 flex min-h-screen flex-col lg:mx-24">
         <section className="animate-title-fade-in border-b border-zinc-800 dark:border-slight-off-white">
           <div className="pb-8 pt-0 md:py-16">
-            <h1 className="text-center text-5xl font-bold md:text-left">cv</h1>
+            <h1 className="text-center text-3xl font-bold md:text-left md:text-5xl">
+              cv
+            </h1>
           </div>
         </section>
         <section className="my-12 mt-10 animate-fade-in-down text-xl font-light md:mt-16 md:px-4 md:text-2xl">

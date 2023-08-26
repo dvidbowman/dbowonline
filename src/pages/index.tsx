@@ -72,9 +72,9 @@ export default function Home() {
           <div className="w-full py-12">
             <div className="grid grid-flow-row-dense grid-cols-1 lg:grid-cols-2">
               {/*Column 1*/}
-              <div className="px-4 pb-4">
+              <div className="m-4 bg-zinc-800 focus-within:bg-zinc-700 hover:bg-zinc-700">
                 <Link href="/projects/dissertation">
-                  <div className="bg-zinc-800 px-12 py-4 hover:bg-zinc-700 md:pt-8 lg:h-64">
+                  <div className="px-12 py-4 md:pt-8 lg:h-64">
                     <h1 className="text-left text-2xl font-medium text-slight-off-white underline decoration-blue-300 underline-offset-4">
                       dissertation
                     </h1>
@@ -88,9 +88,9 @@ export default function Home() {
               </div>
 
               {/*Column 2*/}
-              <div className="px-4 pb-4">
+              <div className="m-4 bg-zinc-800 focus-within:bg-zinc-700 hover:bg-zinc-700">
                 <Link href="/projects/webdev">
-                  <div className="bg-zinc-800 px-12 py-4 hover:bg-zinc-700 md:pt-8 lg:h-64">
+                  <div className="px-12 py-4 md:pt-8 lg:h-64">
                     <h1 className="text-left text-2xl font-medium text-slight-off-white underline decoration-blue-300 underline-offset-4">
                       this website
                     </h1>

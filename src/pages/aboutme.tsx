@@ -21,7 +21,7 @@ const AboutMe: NextPage = () => {
       <main className="mx-12 md:mx-24">
         <section className="animate-title-fade-in border-b border-zinc-800 dark:border-slight-off-white">
           <div className="pb-8 pt-0 md:py-16">
-            <h1 className="text-center text-5xl font-bold md:text-left">
+            <h1 className="text-center text-3xl font-bold md:text-left md:text-5xl">
               about me
             </h1>
           </div>
@@ -36,7 +36,7 @@ const AboutMe: NextPage = () => {
               />
             </div>
           </div>
-          <div className="pt-6 text-center text-2xl font-light md:pt-12 md:text-left md:text-4xl">
+          <div className="py-12 text-center text-2xl font-light md:text-left md:text-4xl">
             <p className="pb-4">
               I'm a 22-year-old computer science graduate from Belfast, Northern
               Ireland
@@ -45,17 +45,17 @@ const AboutMe: NextPage = () => {
               I love learning new things, which extends to everything that I do
             </p>
           </div>
-          <div className="py-12 text-xl font-light md:text-2xl">
+          <div className="text-xl font-light md:text-2xl">
             <h1 className="text-3xl font-bold md:text-4xl">programming</h1>
-            <div className="md:mx-4">
-              <p className="pt-8">
+            <div className="py-12 md:mx-4">
+              <p className="pb-4">
                 I first started learning about the world of programming at a
                 young age in secondary school - the subject had only just been
                 introduced to our school, so we were the first year to be taught
                 it. I remember we started learning with Microsoft VBA and Logo
                 to create little quizzes and drawings.
               </p>
-              <p className="pt-4">
+              <p className="pb-8">
                 A few years later and I was learning the basics of
                 object-oriented programming at A-Levels using C# for Windows
                 Forms, with MySQL for some data storage and querying. These
@@ -64,7 +64,7 @@ const AboutMe: NextPage = () => {
                 <span className="italic">exactly</span> where I wanted to end
                 up...
               </p>
-              <div className="flex flex-col items-center pt-4 md:pt-8 lg:flex-row lg:pt-12">
+              <div className="flex flex-col items-center pb-8 lg:flex-row">
                 <Image
                   src={coursework}
                   alt="coursework"
@@ -72,12 +72,12 @@ const AboutMe: NextPage = () => {
                   height="380"
                   className="md:mx-[10%]"
                 />
-                <p className="pb-6 pt-4 text-center text-xl italic md:text-left">
+                <p className="pt-4 text-center text-xl italic md:text-left">
                   one of the forms in my A-Level Coursework - can you tell I
                   like blue and grey?
                 </p>
               </div>
-              <p className="pt-8">
+              <p className="">
                 Two years pass, school has come and gone, and I moved on to
                 pursue a degree in Computer Science. The course covered a wide
                 range of topics and technologies; I found myself enjoying a lot
@@ -92,8 +92,8 @@ const AboutMe: NextPage = () => {
           </div>
           <div className="text-xl font-light md:text-2xl">
             <h1 className="text-3xl font-bold md:text-4xl">music</h1>
-            <div className="md:mx-4">
-              <p className="pt-8">
+            <div className="py-12 md:mx-4">
+              <p className="pb-4">
                 Music is another one of my biggest passions. Over the last 7 or
                 so years it has become a big part of my life - I listen to, look
                 for, or even try to make my own music every day. Some of my
@@ -120,7 +120,7 @@ const AboutMe: NextPage = () => {
                 </Link>
                 , to name a very select few.
               </p>
-              <p className="pt-4">
+              <p className="pb-8">
                 I started learning how to play guitar by myself for fun in 2018
                 without much prior musical experience, and later moved on to
                 learning electronic music production using{" "}
@@ -134,7 +134,7 @@ const AboutMe: NextPage = () => {
                 creative energy out, while software and programming scratches
                 the logical problem-solving itch.
               </p>
-              <div className="flex flex-col items-center justify-between pt-12 md:flex-row">
+              <div className="flex flex-col items-center justify-between pb-8 md:flex-row">
                 <p className="pb-6 text-center text-xl italic md:mx-[5%] md:pt-0 md:text-left">
                   one of my favourite things i've made, after nearly 3 years of
                   learning:
@@ -146,7 +146,7 @@ const AboutMe: NextPage = () => {
                   className="rounded-xl md:mx-[5%] md:w-[35%] lg:w-[40%]"
                 ></iframe>
               </div>
-              <div className="mx-auto flex flex-col items-center py-6 md:pt-16">
+              <div className="mx-auto flex flex-col items-center">
                 <Image
                   src={freeroamProject}
                   alt="Project file for the song 'freeroam'"
@@ -158,12 +158,12 @@ const AboutMe: NextPage = () => {
               </div>
             </div>
           </div>
-          <div className="py-12 text-xl font-light md:text-2xl">
+          <div className="text-xl font-light md:text-2xl">
             <h1 className="text-3xl font-bold md:text-4xl">
               the great outdoors
             </h1>
-            <div className="md:mx-4">
-              <p className="py-8">
+            <div className="py-12 md:mx-4">
+              <p className="pb-8">
                 I have always enjoyed being outside. I spent most of my
                 childhood playing football with two trees as the goalposts, or a
                 classic game of 'hunt' to get the adrenaline pumping. As I got
@@ -176,9 +176,9 @@ const AboutMe: NextPage = () => {
               <Image
                 src={mournes}
                 alt="Panorama of the Mourne Mountains"
-                className="pb-12"
+                className="pb-8"
               />
-              <div className="flex flex-col items-center md:flex-row">
+              <div className="flex flex-col items-center pb-8 md:flex-row">
                 <Image
                   src={davidMournes}
                   alt="David in the Mourne Mountains"
@@ -191,7 +191,7 @@ const AboutMe: NextPage = () => {
                   uncles, aunties, cousins and grandparents.
                 </p>
               </div>
-              <p className="py-8">
+              <p className="pb-8">
                 In October of 2018, I travelled with a group of friends to
                 Marrakesh in Morocco before setting off on a week-long
                 expedition in the Atlas Mountains. Led by two local tour guides,
