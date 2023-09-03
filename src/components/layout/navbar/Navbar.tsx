@@ -4,12 +4,17 @@ import IconClose from "~/icons/IconClose";
 import IconLightMode from "~/icons/IconLightMode";
 import IconDarkMode from "~/icons/IconDarkMode";
 import ThemeSwitch from "~/components/ThemeSwitch";
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 
 export const Navbar: React.FC = () => {
   const [navMenuOpen, setNavMenuOpen] = useState(false);
   const navMenu = () => {
     setNavMenuOpen(!navMenuOpen);
+  };
+
+  const [aboutDropOpen, setAboutDropOpen] = useState(false);
+  const aboutDrop = () => {
+    setAboutDropOpen(!aboutDropOpen);
   };
 
   return (
@@ -29,17 +34,62 @@ export const Navbar: React.FC = () => {
         <div className="w-items-center h-full w-2/3 animate-fade-in-left justify-end text-xl sm:hidden md:flex">
           <ul className="hidden items-center sm:flex">
             <Link href="/">
-              <li className="border-b-blue-300 px-4 duration-[50ms] ease-out hover:scale-110 hover:border-b-2">
+              <li className="mx-4 border-b-blue-300 px-4 duration-[50ms] ease-out hover:scale-110 hover:border-b-2">
                 home
               </li>
             </Link>
-            <Link href="/aboutme">
-              <li className="border-b-blue-300 px-4 duration-[50ms] ease-out hover:scale-110 hover:border-b-2">
+            <div
+              className={
+                aboutDropOpen
+                  ? "scale-110 border-b-2 border-b-blue-300 px-4 text-left duration-[50ms] ease-out"
+                  : "border-b-blue-300 px-4 text-left duration-[50ms] ease-out hover:scale-110 hover:border-b-2"
+              }
+            >
+              <button
+                className="inline-flex w-full justify-center"
+                onClick={aboutDrop}
+              >
                 about me
-              </li>
-            </Link>
+                <svg
+                  className="h-7 w-7 text-blue-300"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                  />
+                </svg>
+              </button>
+              <div
+                className={
+                  aboutDropOpen
+                    ? "absolute left-0 top-10 w-56 border-2 border-b-zinc-800 border-l-zinc-800 border-r-zinc-800 border-t-blue-300 px-4 text-left"
+                    : "hidden"
+                }
+              >
+                <div className="">
+                  <Link href="/about/programming" onClick={aboutDrop}>
+                    <h1 className="my-4 border-b-blue-300 duration-[50ms] ease-out hover:border-b-2">
+                      programming
+                    </h1>
+                  </Link>
+                  <Link href="/about/music" onClick={aboutDrop}>
+                    <h1 className="my-4 border-b-blue-300 duration-[50ms] ease-out hover:border-b-2">
+                      music
+                    </h1>
+                  </Link>
+                  <Link href="/about/outdoors" onClick={aboutDrop}>
+                    <h1 className="my-4 border-b-blue-300 duration-[50ms] ease-out hover:border-b-2">
+                      outdoors
+                    </h1>
+                  </Link>
+                </div>
+              </div>
+            </div>
+
             <Link href="/projects">
-              <li className="border-b-blue-300 px-4 duration-[50ms] ease-out hover:scale-110 hover:border-b-2">
+              <li className="mx-4 border-b-blue-300 px-4 duration-[50ms] ease-out hover:scale-110 hover:border-b-2">
                 projects
               </li>
             </Link>

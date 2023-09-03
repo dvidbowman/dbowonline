@@ -1,6 +1,7 @@
 import { type NextPage } from "next";
 import Head from "next/head";
 import Link from "next/link";
+import HeadingSection from "~/components/content/HeadingSection";
 import IconGitHub from "../../icons/IconGitHub";
 
 const Dissertation: NextPage = () => {
@@ -10,16 +11,11 @@ const Dissertation: NextPage = () => {
         <title>dissertation - david.</title>
       </Head>
       <main className="mx-12 md:mx-24">
-        <section className="animate-title-fade-in border-b border-zinc-800 dark:border-slight-off-white">
-          <div className="pb-8 pt-0 md:py-16">
-            <h1 className="text-center text-3xl font-bold md:text-left md:text-5xl">
-              my projects{" "}
-              <span className="inline-block font-normal">
-                <span className="text-blue-300">{">"} </span>my dissertation
-              </span>
-            </h1>
-          </div>
-        </section>
+        <HeadingSection
+          pageHeading="my projects"
+          layeredHeading={true}
+          pageSubheading="my dissertation"
+        />
         <section className="mt-10 animate-fade-in-down text-xl font-light md:mt-16 md:text-2xl">
           <div className="md:mx-4">
             <div className="flex w-full flex-col md:flex-row">

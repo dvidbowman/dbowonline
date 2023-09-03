@@ -1,6 +1,7 @@
 import { type NextPage } from "next";
 import Head from "next/head";
 import Link from "next/link";
+import HeadingSection from "~/components/content/HeadingSection";
 
 const MyProjects: NextPage = () => {
   return (
@@ -9,13 +10,7 @@ const MyProjects: NextPage = () => {
         <title>projects - david.</title>
       </Head>
       <main className="mx-12 flex min-h-screen flex-col md:mx-24">
-        <section className="animate-title-fade-in border-b border-zinc-800 dark:border-slight-off-white">
-          <div className="pb-8 pt-0 md:py-16">
-            <h1 className="text-center text-5xl font-bold md:text-left">
-              my projects
-            </h1>
-          </div>
-        </section>
+        <HeadingSection pageHeading="my projects" />
         <section className="animate-fade-in-down">
           <div className="my-4 px-16 pb-8 pt-16">
             <Link href="/projects/dissertation">
