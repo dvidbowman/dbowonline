@@ -81,10 +81,10 @@ const WebDev: NextPage = () => {
                   - this helped me to understand the 'normal JavaScript' {"-> "}
                   React {"-> "} Next.js pipeline, and why I would even bother
                   using a framework. There was a really good demo about building
-                  your own little Next.js blog - perfect, that's kind of what I
-                  was going for. I also looked at open-source code for more
-                  involved websites that I thought were well-designed, one of
-                  them being{" "}
+                  your own little Next.js blog - perfect for me, that's kind of
+                  what I was going for. I also looked at open-source code for
+                  more involved websites that I thought were well-designed, one
+                  of them being{" "}
                   <Link
                     href="https://www.alveussanctuary.org/"
                     className="underline decoration-blue-300 duration-[150ms] ease-in-out hover:text-blue-300"

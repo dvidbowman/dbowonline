@@ -41,14 +41,13 @@ export const Navbar: React.FC = () => {
             <div
               className={
                 aboutDropOpen
-                  ? "scale-110 border-b-2 border-b-blue-300 px-4 text-left duration-[50ms] ease-out"
-                  : "border-b-blue-300 px-4 text-left duration-[50ms] ease-out hover:scale-110 hover:border-b-2"
+                  ? "scale-110 px-4 text-left duration-[50ms] ease-out"
+                  : "border-l-zinc-800 px-4 text-left duration-[50ms] ease-out hover:scale-110"
               }
+              onMouseEnter={aboutDrop}
+              onMouseLeave={aboutDrop}
             >
-              <button
-                className="inline-flex w-full justify-center"
-                onClick={aboutDrop}
-              >
+              <button className="inline-flex w-full justify-center">
                 about me
                 <svg
                   className="h-7 w-7 text-blue-300"
@@ -64,23 +63,23 @@ export const Navbar: React.FC = () => {
               <div
                 className={
                   aboutDropOpen
-                    ? "absolute left-0 top-10 w-56 border-2 border-b-zinc-800 border-l-zinc-800 border-r-zinc-800 border-t-blue-300 px-4 text-left"
+                    ? "absolute left-0 w-fit animate-fade-in-dropdown border-l-2 border-t-2 border-l-zinc-800 border-t-blue-300 bg-slight-off-white px-4 text-left"
                     : "hidden"
                 }
               >
-                <div className="">
-                  <Link href="/about/programming" onClick={aboutDrop}>
-                    <h1 className="my-4 border-b-blue-300 duration-[50ms] ease-out hover:border-b-2">
+                <div className="font-light">
+                  <Link href="/about/programming">
+                    <h1 className="my-4 w-fit border-b-blue-300 duration-[50ms] ease-out hover:border-b-2">
                       programming
                     </h1>
                   </Link>
-                  <Link href="/about/music" onClick={aboutDrop}>
-                    <h1 className="my-4 border-b-blue-300 duration-[50ms] ease-out hover:border-b-2">
+                  <Link href="/about/music">
+                    <h1 className="my-4 w-fit border-b-blue-300 duration-[50ms] ease-out hover:border-b-2">
                       music
                     </h1>
                   </Link>
-                  <Link href="/about/outdoors" onClick={aboutDrop}>
-                    <h1 className="my-4 border-b-blue-300 duration-[50ms] ease-out hover:border-b-2">
+                  <Link href="/about/outdoors">
+                    <h1 className="my-4 w-fit border-b-blue-300 duration-[50ms] ease-out hover:border-b-2">
                       outdoors
                     </h1>
                   </Link>
@@ -132,23 +131,42 @@ export const Navbar: React.FC = () => {
             <Link href="/">
               <li
                 onClick={() => setNavMenuOpen(false)}
-                className="cursor-pointer border-b-blue-300 px-4 py-4 duration-[50ms] ease-out hover:scale-105 hover:border-b-2"
+                className="mx-4 w-fit cursor-pointer border-b-blue-300 pt-4 duration-[50ms] ease-out hover:scale-105 hover:border-b-2"
               >
                 home
               </li>
             </Link>
-            <Link href="/aboutme">
+
+            <li className="px-4 pt-8">about me</li>
+            <Link href="/about/programming">
               <li
                 onClick={() => setNavMenuOpen(false)}
-                className="cursor-pointer border-b-blue-300 px-4 py-4 duration-[50ms] ease-out hover:scale-105 hover:border-b-2"
+                className="ml-8 w-fit cursor-pointer border-b-blue-300 pt-4 font-light duration-[50ms] ease-out hover:scale-105 hover:border-b-2"
               >
-                about me
+                programming
               </li>
             </Link>
+            <Link href="/about/music">
+              <li
+                onClick={() => setNavMenuOpen(false)}
+                className="ml-8 w-fit cursor-pointer border-b-blue-300 pt-4 font-light duration-[50ms] ease-out hover:scale-105 hover:border-b-2"
+              >
+                music
+              </li>
+            </Link>
+            <Link href="/about/outdoors">
+              <li
+                onClick={() => setNavMenuOpen(false)}
+                className="ml-8 w-fit cursor-pointer border-b-blue-300 pt-4 font-light duration-[50ms] ease-out hover:scale-105 hover:border-b-2"
+              >
+                outdoors
+              </li>
+            </Link>
+
             <Link href="/projects">
               <li
                 onClick={() => setNavMenuOpen(false)}
-                className="cursor-pointer border-b-blue-300 px-4 py-4 duration-[50ms] ease-out hover:scale-105 hover:border-b-2"
+                className="mx-4 w-fit cursor-pointer border-b-blue-300 pt-8 duration-[50ms] ease-out hover:scale-105 hover:border-b-2"
               >
                 projects
               </li>
@@ -156,12 +174,12 @@ export const Navbar: React.FC = () => {
             <Link href="/cv">
               <li
                 onClick={() => setNavMenuOpen(false)}
-                className="cursor-pointer border-b-blue-300 px-4 py-4 duration-[50ms] ease-out hover:scale-105 hover:border-b-2"
+                className="mx-4 w-fit cursor-pointer border-b-blue-300 pt-8 duration-[50ms] ease-out hover:scale-105 hover:border-b-2"
               >
                 cv
               </li>
             </Link>
-            <div className="pl-3 pt-3">
+            <div className="pl-3 pt-8">
               <ThemeSwitch />
             </div>
           </ul>
@@ -173,7 +191,7 @@ export const Navbar: React.FC = () => {
             ? "fixed right-0 top-0 h-screen w-[40%] bg-zinc-800 opacity-60 transition-opacity delay-150 duration-[1200ms] md:hidden"
             : "fixed left-[100%] top-0 h-screen w-[40%] opacity-0"
         }
-      ></div>
+      />
     </nav>
   );
 };
