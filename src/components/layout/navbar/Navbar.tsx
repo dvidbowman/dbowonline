@@ -22,7 +22,7 @@ export const Navbar: React.FC = () => {
       <div className="flex h-full w-full items-center justify-between px-4 text-zinc-800 dark:text-slight-off-white md:px-[vw]">
         <div className="flex h-full w-1/3 items-center">
           <Link href="/" className="animate-fade-in-right">
-            <h1 className="px-4 text-[2rem] font-bold tracking-tight duration-[50ms] ease-in-out hover:scale-105">
+            <h1 className="px-4 text-[2rem] font-bold tracking-tight">
               david
               <span className="text-blue-300 duration-150 ease-in-out hover:text-zinc-800 dark:hover:text-slight-off-white">
                 .
@@ -63,27 +63,21 @@ export const Navbar: React.FC = () => {
               <div
                 className={
                   aboutDropOpen
-                    ? "absolute left-0 w-fit animate-fade-in-dropdown border-l-2 border-t-2 border-l-zinc-800 border-t-blue-300 bg-slight-off-white px-4 text-left"
+                    ? "absolute left-0 max-h-36 w-fit animate-fade-in-dropdown border-l-2 border-t-2 border-l-zinc-800 border-t-blue-300 bg-slight-off-white px-4 text-left"
                     : "hidden"
                 }
               >
-                <div className="font-light">
-                  <Link href="/about/programming">
-                    <h1 className="my-4 w-fit border-b-blue-300 duration-[50ms] ease-out hover:border-b-2">
-                      programming
-                    </h1>
-                  </Link>
-                  <Link href="/about/music">
-                    <h1 className="my-4 w-fit border-b-blue-300 duration-[50ms] ease-out hover:border-b-2">
-                      music
-                    </h1>
-                  </Link>
-                  <Link href="/about/outdoors">
-                    <h1 className="my-4 w-fit border-b-blue-300 duration-[50ms] ease-out hover:border-b-2">
-                      outdoors
-                    </h1>
-                  </Link>
-                </div>
+                <ul className="font-light">
+                  <li className="h-10 w-fit border-b-blue-300 py-2 duration-[50ms] ease-out hover:border-b-2">
+                    <Link href="/about/programming">programming</Link>
+                  </li>
+                  <li className="h-10 w-fit border-b-blue-300 py-2 duration-[50ms] ease-out hover:border-b-2">
+                    <Link href="/about/music">music</Link>
+                  </li>
+                  <li className="h-10 w-fit border-b-blue-300 py-2 duration-[50ms] ease-out hover:border-b-2">
+                    <Link href="/about/outdoors">outdoors</Link>
+                  </li>
+                </ul>
               </div>
             </div>
 
@@ -128,60 +122,56 @@ export const Navbar: React.FC = () => {
         {/*NavMenu contents */}
         <div className="mx-4 text-3xl">
           <ul>
-            <Link href="/">
-              <li
-                onClick={() => setNavMenuOpen(false)}
-                className="mx-4 w-fit cursor-pointer border-b-blue-300 pt-4 duration-[50ms] ease-out hover:scale-105 hover:border-b-2"
-              >
+            <li className="mx-4 h-14 w-fit cursor-pointer border-b-blue-300 pt-4 duration-[50ms] ease-out hover:scale-105 hover:border-b-2">
+              <Link href="/" onClick={() => setNavMenuOpen(false)}>
                 home
-              </li>
-            </Link>
+              </Link>
+            </li>
 
-            <li className="px-4 pt-8">about me</li>
-            <Link href="/about/programming">
-              <li
-                onClick={() => setNavMenuOpen(false)}
-                className="ml-8 w-fit cursor-pointer border-b-blue-300 pt-4 font-light duration-[50ms] ease-out hover:scale-105 hover:border-b-2"
-              >
-                programming
+            <li className="px-4 pt-6">
+              about me <span className="text-blue-300">{">"} </span>
+            </li>
+            <ul>
+              <li className="ml-8 h-14 w-fit cursor-pointer border-b-blue-300 pt-4 font-light duration-[50ms] ease-out hover:scale-105 hover:border-b-2">
+                <Link
+                  href="/about/programming"
+                  onClick={() => setNavMenuOpen(false)}
+                >
+                  programming
+                </Link>
               </li>
-            </Link>
-            <Link href="/about/music">
-              <li
-                onClick={() => setNavMenuOpen(false)}
-                className="ml-8 w-fit cursor-pointer border-b-blue-300 pt-4 font-light duration-[50ms] ease-out hover:scale-105 hover:border-b-2"
-              >
-                music
-              </li>
-            </Link>
-            <Link href="/about/outdoors">
-              <li
-                onClick={() => setNavMenuOpen(false)}
-                className="ml-8 w-fit cursor-pointer border-b-blue-300 pt-4 font-light duration-[50ms] ease-out hover:scale-105 hover:border-b-2"
-              >
-                outdoors
-              </li>
-            </Link>
 
-            <Link href="/projects">
-              <li
-                onClick={() => setNavMenuOpen(false)}
-                className="mx-4 w-fit cursor-pointer border-b-blue-300 pt-8 duration-[50ms] ease-out hover:scale-105 hover:border-b-2"
-              >
+              <li className="ml-8 h-14 w-fit cursor-pointer border-b-blue-300 pt-4 font-light duration-[50ms] ease-out hover:scale-105 hover:border-b-2">
+                <Link href="/about/music" onClick={() => setNavMenuOpen(false)}>
+                  music
+                </Link>
+              </li>
+
+              <li className="ml-8 h-14 w-fit cursor-pointer border-b-blue-300 pt-4 font-light duration-[50ms] ease-out hover:scale-105 hover:border-b-2">
+                <Link
+                  href="/about/outdoors"
+                  onClick={() => setNavMenuOpen(false)}
+                >
+                  outdoors
+                </Link>
+              </li>
+            </ul>
+
+            <li className="mx-4 h-16 w-fit cursor-pointer border-b-blue-300 pt-6 duration-[50ms] ease-out hover:scale-105 hover:border-b-2">
+              <Link href="/projects" onClick={() => setNavMenuOpen(false)}>
                 projects
-              </li>
-            </Link>
-            <Link href="/cv">
-              <li
-                onClick={() => setNavMenuOpen(false)}
-                className="mx-4 w-fit cursor-pointer border-b-blue-300 pt-8 duration-[50ms] ease-out hover:scale-105 hover:border-b-2"
-              >
+              </Link>
+            </li>
+
+            <li className="mx-4 h-16 w-fit cursor-pointer border-b-blue-300 pt-6 duration-[50ms] ease-out hover:scale-105 hover:border-b-2">
+              <Link href="/cv" onClick={() => setNavMenuOpen(false)}>
                 cv
-              </li>
-            </Link>
-            <div className="pl-3 pt-8">
+              </Link>
+            </li>
+
+            <li className="pl-3 pt-8">
               <ThemeSwitch />
-            </div>
+            </li>
           </ul>
         </div>
       </div>
