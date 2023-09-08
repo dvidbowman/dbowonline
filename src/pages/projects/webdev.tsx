@@ -10,7 +10,7 @@ const WebDev: NextPage = () => {
       <Head>
         <title>web dev - david.</title>
       </Head>
-      <main className="mx-12 md:mx-24">
+      <main>
         <HeadingSection
           pageHeading="my projects"
           layeredHeading={true}

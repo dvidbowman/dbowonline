@@ -9,7 +9,7 @@ const MyProjects: NextPage = () => {
       <Head>
         <title>projects - david.</title>
       </Head>
-      <main className="mx-12 flex min-h-screen flex-col md:mx-24">
+      <main>
         <HeadingSection pageHeading="my projects" />
         <section className="animate-fade-in-down">
           <div className="my-4 px-16 pb-8 pt-16">

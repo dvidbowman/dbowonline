@@ -2,7 +2,6 @@ import Head from "next/head";
 import Image from "next/image";
 import profilePicture from "../../public/profile.jpg";
 import Link from "next/link";
-import uk from "../../public/ukmap.png";
 import { useState } from "react";
 
 export default function Home() {
@@ -11,7 +10,7 @@ export default function Home() {
       <Head>
         <title>davidbowman.dev</title>
       </Head>
-      <main className="mx-12 animate-fade-in-down items-center justify-center md:mx-20">
+      <main className="animate-fade-in-down items-center justify-center">
         <section className="grid w-full grid-flow-row-dense items-center pb-12 pt-8 sm:grid-cols-1 md:grid-cols-3 ">
           <div>
             <Image

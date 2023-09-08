@@ -11,7 +11,7 @@ const Programming: NextPage = () => {
       <Head>
         <title>programming - david.</title>
       </Head>
-      <main className="mx-12 md:mx-24">
+      <main>
         <HeadingSection
           layeredHeading={true}
           pageHeading="about me"

@@ -10,7 +10,7 @@ const Dissertation: NextPage = () => {
       <Head>
         <title>dissertation - david.</title>
       </Head>
-      <main className="mx-12 md:mx-24">
+      <main>
         <HeadingSection
           pageHeading="my projects"
           layeredHeading={true}

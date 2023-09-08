@@ -16,7 +16,7 @@ const Outdoors: NextPage = () => {
       <Head>
         <title>outdoors - david.</title>
       </Head>
-      <main className="mx-12 md:mx-24">
+      <main>
         <HeadingSection
           layeredHeading={true}
           pageHeading="about me"

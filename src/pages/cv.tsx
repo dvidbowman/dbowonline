@@ -8,7 +8,7 @@ const MyCV: NextPage = () => {
       <Head>
         <title>cv - david.</title>
       </Head>
-      <main className="mx-12 flex min-h-screen flex-col lg:mx-24">
+      <main>
         <HeadingSection pageHeading="cv" />
         <section className="my-12 mt-10 animate-fade-in-down text-xl font-light md:mt-16 md:px-4 md:text-2xl">
           <div className="h-full w-full">

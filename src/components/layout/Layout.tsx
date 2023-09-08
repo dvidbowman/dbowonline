@@ -15,7 +15,11 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
         <header className="flex items-center justify-between">
           <Navbar />
         </header>
-        <main tabIndex={-1} id="main" className="flex flex-grow flex-col">
+        <main
+          tabIndex={-1}
+          id="main"
+          className="mx-[8vw] flex flex-grow flex-col md:mx-[10vw]"
+        >
           {children}
         </main>
         <Footer />

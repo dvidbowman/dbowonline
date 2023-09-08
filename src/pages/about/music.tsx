@@ -4,7 +4,11 @@ import Image from "next/image";
 import Link from "next/link";
 import HeadingSection from "../../components/content/HeadingSection";
 
-import freeroamProject from "../../../public/freeroamproject.png";
+import freeroamProject from "../../../public/music/freeroamproject.png";
+import bstCover from "../../../public/music/bst-cover.png";
+import cyclesCover from "../../../public/music/cycles-cover.png";
+import freeroamCover from "../../../public/music/freeroam-cover.png";
+import dreamaboutyouCover from "../../../public/music/dreamaboutyou-cover.png";
 
 const Music: NextPage = () => {
   return (
@@ -12,7 +16,7 @@ const Music: NextPage = () => {
       <Head>
         <title>music - david.</title>
       </Head>
-      <main className="mx-12 md:mx-24">
+      <main>
         <HeadingSection
           layeredHeading={true}
           pageHeading="about me"
@@ -49,7 +53,7 @@ const Music: NextPage = () => {
                 </Link>
                 , to name a very select few.
               </p>
-              <p className="pb-8">
+              <p className="pb-12">
                 I started learning how to play guitar by myself for fun in 2018
                 without much prior musical experience, and later moved on to
                 learning electronic music production using{" "}
@@ -63,17 +67,89 @@ const Music: NextPage = () => {
                 creative energy out, while software and programming scratches
                 the logical problem-solving itch.
               </p>
-              <div className="flex flex-col items-center justify-between pb-8 md:flex-row">
-                <p className="pb-6 text-center text-xl italic md:mx-[5%] md:pt-0 md:text-left">
-                  one of my favourite things i've made, after nearly 3 years of
-                  learning:
-                </p>
-                <iframe
-                  width="100%"
-                  height="200"
-                  src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1346212480&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
-                  className="rounded-xl md:mx-[5%] md:w-[35%] lg:w-[40%]"
-                ></iframe>
+              <div className="grid grid-cols-2 gap-4 pb-12 md:mx-16 lg:mx-24">
+                <Link
+                  href="https://soundcloud.com/dvidsc/bst"
+                  className="duration-75 ease-in-out hover:scale-105"
+                >
+                  <div className="flex flex-row">
+                    <div>
+                      <Image
+                        src={bstCover}
+                        alt="Cover art for the song 'bst'"
+                        height={150}
+                        className="min-w-[100px]"
+                      />
+                    </div>
+
+                    <div className="m-auto ml-4 md:ml-8">
+                      <h1 className="font-normal">bst</h1>
+                      <p className="italic">4:53 - 23/03/23</p>
+                    </div>
+                  </div>
+                </Link>
+                <Link
+                  href="https://soundcloud.com/dvidsc/dream-about-you-edit"
+                  className="duration-75 ease-in-out hover:scale-105"
+                >
+                  <div className="flex flex-row">
+                    <div>
+                      <Image
+                        src={dreamaboutyouCover}
+                        alt="Cover art for the edit of 'Dream About You' by Tsu Nami and Luma"
+                        height={150}
+                        className="min-w-[100px]"
+                      />
+                    </div>
+
+                    <div className="m-auto ml-4 md:ml-8">
+                      <h1 className="font-normal">dream about you (edit)</h1>
+                      <p className="italic">3:51 - 28/08/23</p>
+                    </div>
+                  </div>
+                </Link>
+
+                <Link
+                  href="https://soundcloud.com/dvidsc/cycles-edit"
+                  className="duration-75 ease-in-out hover:scale-105"
+                >
+                  <div className="flex flex-row">
+                    <div>
+                      <Image
+                        src={cyclesCover}
+                        alt="Cover art for the edit of 'Cycles' by 33 Below and Isaiah"
+                        height={150}
+                        className="min-w-[100px]"
+                      />
+                    </div>
+
+                    <div className="m-auto ml-4 md:ml-8">
+                      <h1 className="font-normal">cycles (edit)</h1>
+                      <p className="italic">3:02 - 28/08/23</p>
+                    </div>
+                  </div>
+                </Link>
+
+                <Link
+                  href="https://soundcloud.com/dvidsc/freeroam"
+                  className="duration-75 ease-in-out hover:scale-105"
+                >
+                  <div className="flex flex-row">
+                    <div>
+                      <Image
+                        src={freeroamCover}
+                        alt="Cover art for the song 'freeroam'"
+                        height={150}
+                        className="min-w-[100px]"
+                      />
+                    </div>
+
+                    <div className="m-auto ml-4 md:ml-8">
+                      <h1 className="font-normal">freeroam</h1>
+                      <p className="italic">4:59 - 18/09/22</p>
+                    </div>
+                  </div>
+                </Link>
               </div>
               <div className="mx-auto flex flex-col items-center">
                 <Image
