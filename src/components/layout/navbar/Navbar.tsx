@@ -60,7 +60,7 @@ export const Navbar: React.FC = () => {
               <div
                 className={
                   aboutDropOpen
-                    ? "absolute left-0 max-h-36 w-fit animate-fade-in-dropdown border-l-2 border-t-2 border-l-zinc-800 border-t-blue-300 bg-slight-off-white px-4 text-left"
+                    ? "absolute left-0 max-h-36 w-fit animate-fade-in-dropdown border-l-2 border-t-2 border-l-zinc-800 border-t-blue-300 bg-slight-off-white px-4 text-left dark:bg-zinc-900"
                     : "hidden"
                 }
               >
