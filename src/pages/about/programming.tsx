@@ -44,6 +44,7 @@ const Programming: NextPage = () => {
                   width="506"
                   height="380"
                   className="md:mx-[10%]"
+                  placeholder="blur"
                 />
                 <p className="pt-4 text-center text-xl italic md:text-left">
                   one of the forms in my A-Level Coursework - can you tell I

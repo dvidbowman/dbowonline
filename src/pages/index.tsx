@@ -17,6 +17,7 @@ export default function Home() {
               className="max-h-72 object-cover md:min-h-[40vw]"
               src={profilePicture}
               alt="Picture of David"
+              placeholder="blur"
             />
           </div>
           <div className="mx-4 overflow-hidden md:col-span-2 md:pl-[10vw]">

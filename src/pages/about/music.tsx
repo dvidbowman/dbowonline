@@ -77,8 +77,9 @@ const Music: NextPage = () => {
                       <Image
                         src={bstCover}
                         alt="Cover art for the song 'bst'"
-                        height={150}
+                        height={125}
                         className="min-w-[100px]"
+                        placeholder="blur"
                       />
                     </div>
 
@@ -97,8 +98,9 @@ const Music: NextPage = () => {
                       <Image
                         src={dreamaboutyouCover}
                         alt="Cover art for the edit of 'Dream About You' by Tsu Nami and Luma"
-                        height={150}
+                        height={125}
                         className="min-w-[100px]"
+                        placeholder="blur"
                       />
                     </div>
 
@@ -118,8 +120,9 @@ const Music: NextPage = () => {
                       <Image
                         src={cyclesCover}
                         alt="Cover art for the edit of 'Cycles' by 33 Below and Isaiah"
-                        height={150}
+                        height={125}
                         className="min-w-[100px]"
+                        placeholder="blur"
                       />
                     </div>
 
@@ -139,8 +142,9 @@ const Music: NextPage = () => {
                       <Image
                         src={freeroamCover}
                         alt="Cover art for the song 'freeroam'"
-                        height={150}
+                        height={125}
                         className="min-w-[100px]"
+                        placeholder="blur"
                       />
                     </div>
 
@@ -156,6 +160,7 @@ const Music: NextPage = () => {
                   src={freeroamProject}
                   alt="Project file for the song 'freeroam'"
                   className="pb-12"
+                  placeholder="blur"
                 />
                 <p className="h-full text-center text-xl italic md:pl-12 md:pt-0 md:text-left">
                   the Ableton project for the song 'freeroam'
