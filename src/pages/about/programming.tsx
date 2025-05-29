@@ -51,7 +51,7 @@ const Programming: NextPage = () => {
                   like blue and grey?
                 </p>
               </div>
-              <p className="">
+              <p className="pb-8">
                 Two years pass, school has come and gone, and I moved on to
                 pursue a degree in Computer Science. The course covered a wide
                 range of topics and technologies; I found myself enjoying a lot
@@ -61,6 +61,9 @@ const Programming: NextPage = () => {
                 you, theory of computation). I really just loved the
                 satisfaction of working through problems while writing some
                 code.
+              </p>
+              <p className="">
+                Some of the standout modules of my course would have to be
               </p>
             </div>
           </div>
