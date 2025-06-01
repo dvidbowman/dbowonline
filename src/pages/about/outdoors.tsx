@@ -5,6 +5,7 @@ import Link from "next/link";
 import HeadingSection from "../../components/content/HeadingSection";
 
 import mournes from "../../../public/mournes.jpg";
+import mournesRunning from "../../../public/mournes_running.jpg";
 import davidMournes from "../../../public/davidmournes.jpg";
 import toubkalSummit from "../../../public/toubkalsummit.jpg";
 import atlasOne from "../../../public/atlasone.png";
@@ -28,6 +29,12 @@ const Outdoors: NextPage = () => {
               the great outdoors
             </h1>
             <div className="py-12 md:mx-4">
+              <Image
+                src={mournes}
+                alt="Panorama of the Mourne Mountains"
+                className="pb-8"
+                placeholder="blur"
+              />
               <p className="pb-8">
                 I have always enjoyed being outside. I spent most of my
                 childhood playing football with two trees as the goalposts, or a
@@ -38,12 +45,6 @@ const Outdoors: NextPage = () => {
                 but never too warm, not too technical but not too easy, and
                 great views to top it off.
               </p>
-              <Image
-                src={mournes}
-                alt="Panorama of the Mourne Mountains"
-                className="pb-8"
-                placeholder="blur"
-              />
               <div className="flex flex-col items-center pb-8 md:flex-row">
                 <Image
                   src={davidMournes}
@@ -89,7 +90,7 @@ const Outdoors: NextPage = () => {
                 strapped to our hands and heads, crampons tied to our feet,
                 hoping to reach the top just in time for the sunrise. We slowly
                 and carefully made our way up as a fall at the wrong angle may
-                have sent you down the longest slip and slide of your life.
+                have sent you down the longest slip-and-slide of your life.
                 Halfway there, as everyone took a short breather, I reached for
                 my water bottle only to find it completely frozen through. We
                 soldiered on in single file to reach the peak just before
@@ -122,16 +123,26 @@ const Outdoors: NextPage = () => {
                   placeholder="blur"
                 />
               </div>
-              <p className="pb-4">
+              <p className="pb-8">
                 The descent back to the refuge was slow going but everyone made
-                it back for a well-deserved meal - except me, as I immediately
-                felt awful and couldn't force myself to eat or drink anything. I
-                headed back to sleep for a couple of hours to shake off what I
-                assumed was altitude sickness, and thankfully woke up feeling
-                fine again. The remaining hike back down to Imlil through the
-                rocky and brown lower mountains was light work, and everyone
-                made the journey safely.
+                it back for a well-deserved meal - except me, immediately
+                feeling awful and couldn't force myself to eat or drink
+                anything. I headed back to sleep for a couple of hours to shake
+                off what we assumed was altitude sickness, and thankfully woke
+                up feeling fine again. The remaining hike back down to Imlil
+                through the rocky and brown lower mountains was light work in
+                comparison, and everyone made the journey safely.
               </p>
+
+              <div className="flex flex-col items-center justify-center md:flex-row">
+                <Image
+                  src={mournesRunning}
+                  alt="David in the Mourne Mountains"
+                  height={1200}
+                  width={1000}
+                  placeholder="blur"
+                />
+              </div>
             </div>
           </div>
         </section>

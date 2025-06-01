@@ -62,9 +62,6 @@ const Programming: NextPage = () => {
                 satisfaction of working through problems while writing some
                 code.
               </p>
-              <p className="">
-                Some of the standout modules of my course would have to be
-              </p>
             </div>
           </div>
         </section>
