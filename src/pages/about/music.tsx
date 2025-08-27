@@ -6,9 +6,9 @@ import HeadingSection from "../../components/content/HeadingSection";
 
 import freeroamProject from "../../../public/music/freeroamproject.png";
 import bstCover from "../../../public/music/bst-cover.png";
-import cyclesCover from "../../../public/music/cycles-cover.png";
+import allyoursCover from "../../../public/music/allyours-cover.png";
 import freeroamCover from "../../../public/music/freeroam-cover.png";
-import dreamaboutyouCover from "../../../public/music/dreamaboutyou-cover.png";
+import blessingCover from "../../../public/music/blessing-cover.png";
 
 const Music: NextPage = () => {
   return (
@@ -90,14 +90,14 @@ const Music: NextPage = () => {
                   </div>
                 </Link>
                 <Link
-                  href="https://soundcloud.com/dvidsc/dream-about-you-edit"
+                  href="https://soundcloud.com/dvidsc/blessing"
                   className="duration-75 ease-in-out hover:scale-105"
                 >
                   <div className="flex flex-row">
                     <div>
                       <Image
-                        src={dreamaboutyouCover}
-                        alt="Cover art for the edit of 'Dream About You' by Tsu Nami and Luma"
+                        src={blessingCover}
+                        alt="Cover art for the song 'blessing'"
                         height={125}
                         className="min-w-[100px]"
                         placeholder="blur"
@@ -105,21 +105,21 @@ const Music: NextPage = () => {
                     </div>
 
                     <div className="m-auto ml-4 md:ml-8">
-                      <h1 className="font-normal">dream about you (edit)</h1>
-                      <p className="italic">3:51 - 28/08/23</p>
+                      <h1 className="font-normal">blessing</h1>
+                      <p className="italic">3:46 - 18/09/23</p>
                     </div>
                   </div>
                 </Link>
 
                 <Link
-                  href="https://soundcloud.com/dvidsc/cycles-edit"
+                  href="https://soundcloud.com/dvidsc/all-yours"
                   className="duration-75 ease-in-out hover:scale-105"
                 >
                   <div className="flex flex-row">
                     <div>
                       <Image
-                        src={cyclesCover}
-                        alt="Cover art for the edit of 'Cycles' by 33 Below and Isaiah"
+                        src={allyoursCover}
+                        alt="Cover art for the song 'all yours'"
                         height={125}
                         className="min-w-[100px]"
                         placeholder="blur"
@@ -127,8 +127,8 @@ const Music: NextPage = () => {
                     </div>
 
                     <div className="m-auto ml-4 md:ml-8">
-                      <h1 className="font-normal">cycles (edit)</h1>
-                      <p className="italic">3:02 - 28/08/23</p>
+                      <h1 className="font-normal">all yours</h1>
+                      <p className="italic">2:59 - 25/03/25</p>
                     </div>
                   </div>
                 </Link>
@@ -155,7 +155,7 @@ const Music: NextPage = () => {
                   </div>
                 </Link>
               </div>
-              <div className="mx-auto flex flex-col items-center">
+              <div className="mx-auto flex flex-col items-center pb-12">
                 <Image
                   src={freeroamProject}
                   alt="Project file for the song 'freeroam'"
@@ -166,6 +166,14 @@ const Music: NextPage = () => {
                   the Ableton project for the song 'freeroam'
                 </p>
               </div>
+              <p className="pb-4">
+                I definitely find it to be somewhat of a love-hate relationship.
+                Writing a good song with just yourself and an instrument is a
+                challenge in and of itself - doing the same thing with the
+                infinite number of creative choices available in modern
+                electronic music <span className="line-through">can be</span>
+                <span className="font-normal"> IS</span> quite overwhelming.
+              </p>
             </div>
           </div>
         </section>
