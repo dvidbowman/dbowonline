@@ -5,7 +5,7 @@ import { useState } from "react";
 
 import profilePicture from "../../public/profile.jpg";
 import diamondback from "../../public/birding/vortexdiamondbacks.jpg";
-import mournesHouse from "../../public/mournes_house.jpg";
+import horse from "../../public/horse.jpg";
 import instruments from "../../public/music/instruments.jpg";
 
 export default function Home() {
@@ -138,8 +138,8 @@ export default function Home() {
                       <div>
                         <Image
                           className="object-cover"
-                          src={mournesHouse}
-                          alt="Ruins of an old house in the Mourne Mountains"
+                          src={horse}
+                          alt="A horse grazing in the Mourne Mountains"
                           placeholder="blur"
                         />
                       </div>
