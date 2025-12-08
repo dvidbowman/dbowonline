@@ -33,21 +33,21 @@ const Music: NextPage = () => {
                 biggest inspirations in life are musicians and bands, like{" "}
                 <Link
                   href="https://twitter.com/iameden"
-                  className="font-semibold duration-[150ms] ease-in-out hover:text-blue-300"
+                  className="hyperlink hover:text-blue-300"
                 >
                   EDEN
                 </Link>
                 ,{" "}
                 <Link
                   href="https://twitter.com/iamnovoamor"
-                  className="font-semibold duration-[150ms] ease-in-out hover:text-blue-300"
+                  className="hyperlink hover:text-blue-300"
                 >
                   Novo Amor
                 </Link>{" "}
                 and{" "}
                 <Link
                   href="https://twitter.com/HotMulligan"
-                  className="font-semibold duration-[150ms] ease-in-out hover:text-blue-300"
+                  className="hyperlink hover:text-blue-300"
                 >
                   Hot Mulligan
                 </Link>
@@ -59,7 +59,7 @@ const Music: NextPage = () => {
                 learning electronic music production using{" "}
                 <Link
                   href="https://www.ableton.com/en/live/"
-                  className="underline decoration-blue-300 duration-[150ms] ease-in-out hover:text-blue-300"
+                  className="hyperlink hover:text-blue-300"
                 >
                   Ableton Live 10
                 </Link>{" "}

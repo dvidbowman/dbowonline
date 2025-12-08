@@ -18,10 +18,11 @@ const MyCV: NextPage = () => {
                   Profile
                 </h1>
                 <p className="pt-2">
-                  Recent Computer Science graduate with a wide array of
-                  experience spanning multiple different programming languages,
-                  methodologies and technologies. Currently searching for
-                  employment in tech.
+                  Computer Science graduate with a wide array of experience
+                  spanning multiple different programming languages,
+                  methodologies and technologies. More recently developing an
+                  interest in ecological conservation of our local areas and
+                  wildlife in NI.
                 </p>
               </div>
             </div>
@@ -32,7 +33,7 @@ const MyCV: NextPage = () => {
                   Work Experience
                 </h1>
                 <p className="mb-2 pt-2 font-semibold">
-                  2024 - Present | Purchasing Trainee / Data Analyst | Beggs &
+                  May 2024 - Oct 2025 | Purchasing / Data Analyst | Beggs &
                   Partners
                 </p>
 
@@ -49,20 +50,21 @@ const MyCV: NextPage = () => {
                   </li>
                   <li>
                     Collection, sorting, and analysis of product-related data in
-                    Excel to be used to make decisions on stocked/ sold items
+                    Excel to be used to make decisions on stocked/sold items
                   </li>
                 </ul>
 
                 <p className="mb-3 pt-2 font-semibold">
                   In April 2025 I was temporarily moved to assist the product
-                  management team full-time, which meant undertaking more
+                  management team full-time, undertaking more
                   technically-focused responsibilities:
                 </p>
 
                 <ul className="ml-6 list-outside list-disc marker:text-blue-300 md:ml-12">
                   <li>
                     Creation, updating, and testing of new product codes to suit
-                    individual suppliers’ pricing structures and price increases
+                    individual suppliers’ pricing structures and price
+                    increases/offers
                   </li>
                   <li>
                     Setting up new supplier accounts according to our agreed
@@ -71,9 +73,39 @@ const MyCV: NextPage = () => {
                   <li>
                     Performing large-scale system imports to streamline
                     functions like the product search with the help of AI,
-                    reducing friction for the sales and stores teams.
+                    reducing friction for the sales and stores teams
                   </li>
                 </ul>
+              </div>
+            </div>
+
+            <div className="m-auto mb-4 w-[90%] bg-[#f5f5f5] dark:bg-zinc-800 md:w-[70%]">
+              <div className="h-full w-full px-10 py-8">
+                <h1 className="text-2xl font-bold underline decoration-blue-300 underline-offset-4 md:text-3xl">
+                  Work Skills
+                </h1>
+                <p className="pt-2">
+                  <span className="pt-2 font-semibold">Time Management:</span>{" "}
+                  Developed excellent time management skills throughout my
+                  education and reactive role in full-time employment, including
+                  working under time pressure plus the ability to prioritise
+                  when faced with multiple tasks
+                </p>
+                <p className="pt-2">
+                  <span className="pt-2 font-semibold">Communication:</span>{" "}
+                  Improved communication of my ideas, opinions and difficulties
+                  to team members over years of group-focused projects in
+                  education and professional work. Spent entire employment
+                  working in a team, and was highly dependent on clear
+                  communication with co-workers and suppliers, speaking with new
+                  people every week
+                </p>
+                <p className="pt-2">
+                  <span className="pt-2 font-semibold">Problem Solving:</span>{" "}
+                  Wide scope of education has allowed me to develop great
+                  problem-solving skills in a wide array of both technical and
+                  interpersonal challenges
+                </p>
               </div>
             </div>
 
@@ -103,6 +135,23 @@ const MyCV: NextPage = () => {
             <div className="m-auto mb-4 w-[90%] bg-[#f5f5f5] dark:bg-zinc-800 md:w-[70%]">
               <div className="h-full w-full px-10 py-8">
                 <h1 className="text-2xl font-bold underline decoration-blue-300 underline-offset-4 md:text-3xl">
+                  Volunteering
+                </h1>
+                <p className="pt-2 font-semibold">
+                  RSPB - Practical Work Off Reserve
+                </p>
+                <p className="pt-2">
+                  Recently began and hope to continue volunteering with the RSPB
+                  on their upland/lowland peatland projects. This includes group
+                  practical work with the aim of removing invasive conifers from
+                  the peatland that have spread from nearby plantations.
+                </p>
+              </div>
+            </div>
+
+            <div className="m-auto mb-4 w-[90%] bg-[#f5f5f5] dark:bg-zinc-800 md:w-[70%]">
+              <div className="h-full w-full px-10 py-8">
+                <h1 className="text-2xl font-bold underline decoration-blue-300 underline-offset-4 md:text-3xl">
                   Technical Skills
                 </h1>
                 <p className="pt-2">
@@ -119,35 +168,6 @@ const MyCV: NextPage = () => {
                 <p className="pt-2">
                   <span className="pt-2 font-semibold">Operating Systems:</span>{" "}
                   Windows 7/10, Minor experience with Linux
-                </p>
-              </div>
-            </div>
-
-            <div className="m-auto mb-4 w-[90%] bg-[#f5f5f5] dark:bg-zinc-800 md:w-[70%]">
-              <div className="h-full w-full px-10 py-8">
-                <h1 className="text-2xl font-bold underline decoration-blue-300 underline-offset-4 md:text-3xl">
-                  Work Skills
-                </h1>
-                <p className="pt-2">
-                  <span className="pt-2 font-semibold">Time Management:</span>{" "}
-                  Development of my time management skills have drastically
-                  improved in recent years, both through completion of my
-                  degree, and through my reactive role in full-time employment
-                </p>
-                <p className="pt-2">
-                  <span className="pt-2 font-semibold">Problem Solving:</span>{" "}
-                  Completing start-to-finish projects were the best
-                  opportunities to build upon my problem-solving skills,
-                  especially under time-pressure. Tackling a wide range of
-                  problems in different technologies has allowed me to refine a
-                  personal way of approaching roadblocks and how to get around
-                  them
-                </p>
-                <p className="pt-2">
-                  <span className="pt-2 font-semibold">Communication:</span>{" "}
-                  Communicating my opinions, ideas or difficulties to other
-                  members of my team has improved through the very group-based
-                  nature of my education and employment.
                 </p>
               </div>
             </div>

@@ -4,14 +4,14 @@ import Image from "next/image";
 import Link from "next/link";
 import HeadingSection from "../../components/content/HeadingSection";
 
-import mournes from "../../../public/mournes.jpg";
-import mournesRunning from "../../../public/mournes_running.jpg";
-import davidMournes from "../../../public/davidmournes.jpg";
-import toubkalSummit from "../../../public/toubkalsummit.jpg";
-import atlasOne from "../../../public/atlasone.png";
-import atlasTwo from "../../../public/atlastwo.png";
+import mournes from "../../../public/hiking/mournes.jpg";
+import mournesRunning from "../../../public/hiking/mournes_running.jpg";
+import davidMournes from "../../../public/hiking/davidmournes.jpg";
+import toubkalSummit from "../../../public/hiking/toubkalsummit.jpg";
+import atlasOne from "../../../public/hiking/atlasone.png";
+import atlasTwo from "../../../public/hiking/atlastwo.png";
 
-const Outdoors: NextPage = () => {
+const Hiking: NextPage = () => {
   return (
     <>
       <Head>
@@ -21,7 +21,7 @@ const Outdoors: NextPage = () => {
         <HeadingSection
           layeredHeading={true}
           pageHeading="about me"
-          pageSubheading="outdoors"
+          pageSubheading="hiking"
         />
         <section className="mt-10 animate-fade-in-down md:mt-16">
           <div className="text-xl font-light md:text-2xl">
@@ -151,4 +151,4 @@ const Outdoors: NextPage = () => {
   );
 };
 
-export default Outdoors;
+export default Hiking;

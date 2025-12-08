@@ -60,19 +60,22 @@ export const Navbar: React.FC = () => {
               <div
                 className={
                   aboutDropOpen
-                    ? "absolute left-0 max-h-36 w-fit animate-fade-in-dropdown border-l-2 border-t-2 border-l-zinc-800 border-t-blue-300 bg-slight-off-white px-4 text-left dark:bg-zinc-900"
+                    ? "absolute left-0 max-h-48 w-fit animate-fade-in-dropdown border-l-2 border-t-2 border-l-zinc-800 border-t-blue-300 bg-slight-off-white px-4 text-left dark:border-blue-300 dark:bg-zinc-900"
                     : "hidden"
                 }
               >
                 <ul className="font-light">
                   <li className="h-10 w-fit border-b-blue-300 py-2 duration-[50ms] ease-out hover:border-b-2">
-                    <Link href="/about/programming">programming</Link>
-                  </li>
-                  <li className="h-10 w-fit border-b-blue-300 py-2 duration-[50ms] ease-out hover:border-b-2">
                     <Link href="/about/music">music</Link>
                   </li>
                   <li className="h-10 w-fit border-b-blue-300 py-2 duration-[50ms] ease-out hover:border-b-2">
-                    <Link href="/about/outdoors">outdoors</Link>
+                    <Link href="/about/hiking">hiking</Link>
+                  </li>
+                  <li className="h-10 w-fit border-b-blue-300 py-2 duration-[50ms] ease-out hover:border-b-2">
+                    <Link href="/about/birding">birding</Link>
+                  </li>
+                  <li className="h-10 w-fit border-b-blue-300 py-2 duration-[50ms] ease-out hover:border-b-2">
+                    <Link href="/about/programming">programming</Link>
                   </li>
                 </ul>
               </div>

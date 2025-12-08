@@ -1,8 +1,12 @@
 import Head from "next/head";
 import Image from "next/image";
-import profilePicture from "../../public/profile.jpg";
 import Link from "next/link";
 import { useState } from "react";
+
+import profilePicture from "../../public/profile.jpg";
+import diamondback from "../../public/birding/vortexdiamondbacks.jpg";
+import mournesHouse from "../../public/mournes_house.jpg";
+import instruments from "../../public/music/instruments.jpg";
 
 export default function Home() {
   return (
@@ -11,7 +15,7 @@ export default function Home() {
         <title>davidbowman.dev</title>
       </Head>
       <main className="animate-fade-in-down items-center justify-center">
-        <section className="grid w-full grid-flow-row-dense items-center pb-12 pt-8 sm:grid-cols-1 md:grid-cols-3 ">
+        <section className="grid w-full grid-flow-row-dense items-center pb-12 pt-8 sm:grid-cols-1 md:grid-cols-3">
           <div>
             <Image
               className="max-h-72 object-cover md:min-h-[40vw]"
@@ -25,38 +29,123 @@ export default function Home() {
               hi, i'm david bowman
             </h1>
             <h1 className="py-2 text-center text-[30px] font-light md:text-left md:text-[2.5vmax]">
-              a software developer from
-              <br />
-              <p className="underline decoration-blue-300 decoration-2 underline-offset-4">
+              from{" "}
+              <span className="underline decoration-blue-300 decoration-2 underline-offset-4">
                 belfast, northern ireland
-              </p>
+              </span>
             </h1>
           </div>
         </section>
 
-        <section className="pb-12">
+        <section className="pb-8">
           <div className="bg-[url('/sky5.jpg')]">
             <div className="h-full w-full items-center justify-center">
               <div className="grid grid-flow-row-dense grid-cols-1 px-10 py-6 md:grid-cols-2">
                 <p className="pb-4 text-left text-[18px] font-normal text-slight-off-white md:pb-0">
-                  I first started learning how to code in school at the age of
-                  14, and have been learning every year since. I've written in a
-                  lot of different languages, including{" "}
-                  <strong>Java, JavaScript, C#, PHP</strong> and{" "}
-                  <strong>MySQL</strong>. Throughout my education I've had the
-                  chance to do all sorts, from{" "}
-                  <strong>
-                    websites (like this one!), machine learning, mobile apps{" "}
-                  </strong>
-                  and even some <strong>computer vision</strong>.
+                  This website started out as a fun way to showcase my skills
+                  and experience while learning something new; I wanted to have
+                  an easy way to talk about my projects and interests in a bit
+                  more detail than you can fit on a CV or cover letter. I think
+                  it does that pretty well - and it's a lot more fun than I
+                  thought it'd be.
                 </p>
                 <p className="text-left text-[18px] font-normal text-slight-off-white md:pl-6">
-                  I completed my <strong>BSc in Computer Science</strong> at{" "}
-                  <strong>Queen's University Belfast</strong> in 2022, and am
-                  now looking for work in software development. I haven't locked
-                  myself into any specific sector, and I'm always trying to keep
-                  a <strong>learning-first mindset</strong>.
+                  I completed a <strong>BSc in Computer Science</strong> at{" "}
+                  <strong>Queen's University Belfast</strong> in 2022, and have
+                  tried to keep my skills up-to-date since. I'm always trying to
+                  keep a <strong>learning-first mindset</strong> and am
+                  currently following where my passions take me!
                 </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="w-full">
+          <div className="w-full justify-center text-left">
+            <h1 className="text-[30px] lg:text-[2.5vw]">
+              about me<span className="text-blue-300">!</span>
+            </h1>
+          </div>
+
+          <div className="w-full py-8">
+            <div className="grid grid-flow-row-dense grid-cols-1 lg:grid-cols-3">
+              {/*Column 1*/}
+              <div className="m-4 bg-zinc-800 focus-within:bg-zinc-700 hover:bg-zinc-700">
+                <Link href="/about/birding">
+                  <div className="h-fit">
+                    <div className="grid w-full grid-flow-row-dense grid-cols-2 items-center">
+                      <div className="px-6">
+                        <h1 className="text-left text-2xl font-medium text-slight-off-white underline decoration-blue-300 underline-offset-4">
+                          birding
+                        </h1>
+                        <p className="pt-3 text-slight-off-white">
+                          all about birds
+                        </p>
+                      </div>
+                      <div>
+                        <Image
+                          className="object-cover"
+                          src={diamondback}
+                          alt="A pair of binoculars on a rock by the sea"
+                          placeholder="blur"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </Link>
+              </div>
+
+              {/*Column 2*/}
+              <div className="m-4 bg-zinc-800 focus-within:bg-zinc-700 hover:bg-zinc-700">
+                <Link href="/about/music">
+                  <div className="h-fit">
+                    <div className="grid w-full grid-flow-row-dense grid-cols-2 items-center">
+                      <div className="px-6">
+                        <h1 className="text-left text-2xl font-medium text-slight-off-white underline decoration-blue-300 underline-offset-4">
+                          music
+                        </h1>
+                        <p className="pt-3 text-slight-off-white">
+                          music or something
+                        </p>
+                      </div>
+                      <div>
+                        <Image
+                          className="object-cover"
+                          src={instruments}
+                          alt="A paino and guitar"
+                          placeholder="blur"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </Link>
+              </div>
+
+              {/*Column 3*/}
+              <div className="m-4 bg-zinc-800 focus-within:bg-zinc-700 hover:bg-zinc-700">
+                <Link href="/about/hiking">
+                  <div className="h-fit">
+                    <div className="grid w-full grid-flow-row-dense grid-cols-2 items-center">
+                      <div className="px-6">
+                        <h1 className="text-left text-2xl font-medium text-slight-off-white underline decoration-blue-300 underline-offset-4">
+                          hiking
+                        </h1>
+                        <p className="pt-3 text-slight-off-white">
+                          big hills and stuff
+                        </p>
+                      </div>
+                      <div>
+                        <Image
+                          className="object-cover"
+                          src={mournesHouse}
+                          alt="Ruins of an old house in the Mourne Mountains"
+                          placeholder="blur"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </Link>
               </div>
             </div>
           </div>

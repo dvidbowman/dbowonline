@@ -148,9 +148,9 @@ const Dissertation: NextPage = () => {
               >
                 <IconGitHub
                   size={32}
-                  className="inline-block hover:text-blue-300"
+                  className="inline-block scale-75 hover:text-blue-300 md:scale-100"
                 />
-                <h1 className="mx-4 inline-block underline decoration-blue-300">
+                <h1 className="mx-4 inline-block font-semibold underline decoration-blue-300 duration-[150ms] ease-in-out hover:text-blue-300">
                   You can find the code for main application here!
                 </h1>
               </Link>

@@ -55,7 +55,7 @@ const WebDev: NextPage = () => {
                 I built the app using the{" "}
                 <Link
                   href="https://create.t3.gg/"
-                  className="underline decoration-blue-300 duration-[150ms] ease-in-out hover:text-blue-300"
+                  className="hyperlink hover:text-blue-300"
                 >
                   T3 Stack
                 </Link>{" "}
@@ -74,7 +74,7 @@ const WebDev: NextPage = () => {
                   I started off learning by following the incredibly helpful{" "}
                   <Link
                     href="https://nextjs.org/learn/foundations/about-nextjs"
-                    className="underline decoration-blue-300 duration-[150ms] ease-in-out hover:text-blue-300"
+                    className="hyperlink hover:text-blue-300"
                   >
                     introduction to Next.js
                   </Link>{" "}
@@ -87,7 +87,7 @@ const WebDev: NextPage = () => {
                   of them being{" "}
                   <Link
                     href="https://www.alveussanctuary.org/"
-                    className="underline decoration-blue-300 duration-[150ms] ease-in-out hover:text-blue-300"
+                    className="hyperlink hover:text-blue-300"
                   >
                     alveussanctuary.org
                   </Link>
@@ -97,8 +97,8 @@ const WebDev: NextPage = () => {
                   Their website is WAY too overkill for anything I needed to do,
                   but I still learned a huge amount just by looking at how the
                   code is layed out. I started to really understand the
-                  importance of components, then using them for things like the
-                  navbar and footer.
+                  importance of components and then used them for things like
+                  the navbar and footer.
                 </p>
               </div>
             </div>
@@ -148,8 +148,11 @@ const WebDev: NextPage = () => {
                 target="_blank"
                 className="duration-[150ms] ease-in-out hover:text-blue-300"
               >
-                <IconGitHub size={32} className="inline-block" />
-                <h1 className="mx-4 inline-block underline decoration-blue-300">
+                <IconGitHub
+                  size={32}
+                  className="inline-block scale-75 hover:text-blue-300 md:scale-100"
+                />
+                <h1 className="hyperlink mx-4 inline-block hover:text-blue-300">
                   You can find the code for this project here!
                 </h1>
               </Link>
