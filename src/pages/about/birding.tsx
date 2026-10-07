@@ -4,16 +4,16 @@ import Image from "next/image";
 import Link from "next/link";
 import HeadingSection from "../../components/content/HeadingSection";
 import portmoreHide from "../../../public/birding/portmore_hide.jpg";
-import merlinBirdId from "../../../public/birding/merlinbirdid.png";
-import merlinBirdIdSpecies from "../../../public/birding/merlinbirdidspecies.png";
-import merlinBirdIdLifeList from "../../../public/birding/merlinbirdidlifelist.png";
-import blackGuillemot from "../../../public/birding/blackguillemot.png";
-import vortexDiamondback from "../../../public/birding/vortexdiamondbacks.jpg";
-import commonMagpie from "../../../public/birding/commonmagpie.jpg";
-import eurasianRobin from "../../../public/birding/eurasianrobin.jpg";
-import hoodedCrow from "../../../public/birding/hoodedcrow.jpg";
+import merlinBirdId from "../../../public/birding/merlin_bird_info.png";
+import merlinBirdIdSpecies from "../../../public/birding/merlin_bird_species.png";
+import merlinBirdIdLifeList from "../../../public/birding/merlin_bird_life_list.png";
+import blackGuillemot from "../../../public/birding/black_guillemot.png";
+import vortexDiamondback from "../../../public/birding/vortex_diamondbacks.jpg";
+import commonMagpie from "../../../public/birding/common_magpie.jpg";
+import eurasianRobin from "../../../public/birding/eurasian_robin.jpg";
+import hoodedCrow from "../../../public/birding/hooded_crow.jpg";
 import squirrel from "../../../public/birding/squirrel.jpg";
-import piedWagtail from "../../../public/birding/piedwagtail.jpg";
+import piedWagtail from "../../../public/birding/pied_wagtail.jpg";
 
 const Birding: NextPage = () => {
   return (
@@ -48,8 +48,8 @@ const Birding: NextPage = () => {
                 </Link>{" "}
                 rare sightings blog - and the best part, I didn't even see it...
               </p>
-              <div className="flex flex-col items-center pb-8 pt-10 md:flex-row">
-                <p className="mx-12 text-center italic">
+              <div className="flex flex-col items-center md:pb-8 xl:flex-row">
+                <p className="mx-12 pb-8 text-center italic">
                   the lovely Portmore Lough; i made it to the hide with feet
                   wetter than i'd maybe have liked... that's why you keep spare
                   socks in the car!
@@ -58,7 +58,9 @@ const Birding: NextPage = () => {
                   src={portmoreHide}
                   alt="The view from the RSPB Portmore Lough Bird Hide"
                   placeholder="blur"
-                  className="max-w-md md:max-w-xl"
+                  height={500}
+                  width={700}
+                  className="shrink"
                 />
               </div>
               <p className="pb-8 pt-10">
@@ -89,7 +91,7 @@ const Birding: NextPage = () => {
                 and decided this was one for the all-knowing internet; Google,
                 show me "black and white bird red feet diving uk".
               </p>
-              <div className="flex flex-col items-center pb-8 pt-8 md:flex-row">
+              <div className="flex flex-col items-center py-8 xl:flex-row">
                 <Image
                   src={blackGuillemot}
                   alt="A Black Guillemot stood on a group of rocks, taken from the RSPB website"
@@ -97,13 +99,15 @@ const Birding: NextPage = () => {
                   width={800}
                   placeholder="blur"
                 />
-                <p className="mx-12 pt-10 md:pt-0">
+
+                <p className="mx-12 pt-10">
                   Google says it's a Black Guillemot, live in the flesh, and
-                  verifiably NOT a duck. Yeah right. I learn that these are
-                  common birds here in the UK and Ireland, yet I've never seen
-                  one before. Or maybe I had and just never cared enough to give
-                  it my time of day. I think this was the first time a random
-                  bird had ever captured my full attention.
+                  verifiably NOT a duck.{" "}
+                  <span className="italic">Yeah right</span>. I learn that these
+                  are common birds here in the UK and Ireland, yet I've never
+                  seen one before. Or maybe I had and just never cared enough to
+                  give it my time of day. I think this was the first time a
+                  random bird had ever captured my full attention.
                   <br />
                   <br />
                   <span className="text-sm italic">
@@ -132,7 +136,7 @@ const Birding: NextPage = () => {
                 but it kickstarted the slow change to my perception of local
                 wildlife over the last couple of years. I'd love to tell it.
               </p>
-              <p className="pb-8 pt-8 italic">
+              <p className="pt-8 italic">
                 Though it'd probably just look at me all weird and think, "Huh,
                 funny looking duck".
               </p>
@@ -155,7 +159,7 @@ const Birding: NextPage = () => {
                 searching for a new 'Lifer' to add to the list.
               </p>
 
-              <p className="pb-8">
+              <p className="pb-10">
                 It sounds funny, but if someone asked if I was a birdwatcher at
                 this point, I could have looked them dead in the eye and said
                 no... It still wasn't something I actively thought too much
@@ -163,26 +167,29 @@ const Birding: NextPage = () => {
                 own a pair of binoculars!
               </p>
 
-              <div className="flex flex-row items-center justify-between pb-8 pt-10 md:px-16">
+              <div className="flex flex-col items-center justify-between px-8 md:px-16 xl:flex-row">
                 <Image
                   src={merlinBirdId}
                   alt="A screenshot of the 'Likely Birds' section on the Merlin Bird ID App"
                   height={100}
-                  width={400}
+                  width={300}
+                  className="m-2 aspect-auto shrink"
                   placeholder="blur"
                 />
                 <Image
                   src={merlinBirdIdSpecies}
                   alt="A screenshot of the Pied Wagtail species description on the Merlin Bird ID App"
                   height={100}
-                  width={400}
+                  width={300}
+                  className="m-2 shrink"
                   placeholder="blur"
                 />
                 <Image
                   src={merlinBirdIdLifeList}
                   alt="A screenshot of David's 'Life List' section on the Merlin Bird ID App"
                   height={100}
-                  width={400}
+                  width={300}
+                  className="m-2 shrink"
                   placeholder="blur"
                 />
               </div>
@@ -206,7 +213,7 @@ const Birding: NextPage = () => {
                 hovered along the cliffs of a coastal walk with a new friend -
                 Fine, you can call me a birdwatcher.
               </p>
-              <p className="pb-8">
+              <p className="pb-12">
                 It finally became one of my main hobbies that Spring into
                 Summer. A tough string of months was forcing me outside more
                 than ever in my life as I looked for some distraction that
@@ -218,9 +225,9 @@ const Birding: NextPage = () => {
                 the only things keeping me sane were sore legs, obnoxiously loud
                 Oystercatchers and rocks that make for really good seats.
               </p>
-              <div className="flex flex-col items-center pb-8 pt-10 md:flex-row">
-                <div>
-                  <p className="mx-12 md:pt-0">
+              <div className="flex flex-col items-center pb-8 xl:flex-row">
+                <div className="mx-6 pb-8 md:mx-12">
+                  <p className="pb-6">
                     Despite it all, I was enjoying the birding so much that I
                     felt like I was beginning to outgrow the compact little
                     binos. After a year of faithful service it was time to
@@ -228,11 +235,11 @@ const Birding: NextPage = () => {
                     8x42s. I am <span className="italic">obsessed</span> with
                     these, and that's putting it lightly - they (expectedly)
                     blew my old pair out of the water. Never had I been more
-                    excited to get outside and stare at a seagull.
+                    excited to get outside and stare at a gull.
                   </p>
-                  <p className="mx-12 pb-10 md:pt-8">
+                  <p className="">
                     The Diamondbacks are much bigger with a 42mm objective lens
-                    (the last were only 22mm) and came with a cool harness-case
+                    (my last were only 22mm) and came with a cool harness-case
                     to carry and store them in. Bigger lenses means a wider
                     field-of-view and the overall better glass quality gives a
                     much clearer and more accurate picture of your subject. I

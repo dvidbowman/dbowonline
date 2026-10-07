@@ -3,7 +3,7 @@ import Head from "next/head";
 import Image from "next/image";
 import HeadingSection from "../../components/content/HeadingSection";
 
-import coursework from "../../../public/programming/alevelcourseworksc.png";
+import coursework from "../../../public/programming/alevel_coursework.png";
 
 const Programming: NextPage = () => {
   return (

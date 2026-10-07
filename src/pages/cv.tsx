@@ -30,6 +30,24 @@ const MyCV: NextPage = () => {
             <div className="m-auto mb-4 w-[90%] bg-[#f5f5f5] dark:bg-zinc-800 md:w-[70%]">
               <div className="h-full w-full px-10 py-8">
                 <h1 className="text-2xl font-bold underline decoration-blue-300 underline-offset-4 md:text-3xl">
+                  Education
+                </h1>
+                <p className="pt-2 font-semibold">
+                  2026 - Present | Queen's University Belfast
+                </p>
+                <p className="pb-2">
+                  MSc in Ecological Management and Conservation Biology
+                </p>
+                <p className="pt-2 font-semibold">
+                  2019 - 2022 | Queen's University Belfast
+                </p>
+                <p className="pb-2">BSc in Computer Science, 2:1 Grade</p>
+              </div>
+            </div>
+
+            <div className="m-auto mb-4 w-[90%] bg-[#f5f5f5] dark:bg-zinc-800 md:w-[70%]">
+              <div className="h-full w-full px-10 py-8">
+                <h1 className="text-2xl font-bold underline decoration-blue-300 underline-offset-4 md:text-3xl">
                   Work Experience
                 </h1>
                 <p className="mb-2 pt-2 font-semibold">
@@ -112,39 +130,17 @@ const MyCV: NextPage = () => {
             <div className="m-auto mb-4 w-[90%] bg-[#f5f5f5] dark:bg-zinc-800 md:w-[70%]">
               <div className="h-full w-full px-10 py-8">
                 <h1 className="text-2xl font-bold underline decoration-blue-300 underline-offset-4 md:text-3xl">
-                  Education
-                </h1>
-                <p className="pt-2 font-semibold">
-                  2019 - 2022 | Queen's University Belfast
-                </p>
-                <p className="pb-2">BSc in Computer Science, 2:1 Grade</p>
-
-                <p className="pt-2 font-semibold">
-                  2016 - 2019 | Grosvenor Grammar School
-                </p>
-                <p className="pb-2">
-                  A-levels: Software Systems Development (B), German (B),
-                  Biology (B)
-                  <br />
-                  AS-Levels: Software Systems Development (B), German (C),
-                  Biology (C)
-                </p>
-              </div>
-            </div>
-
-            <div className="m-auto mb-4 w-[90%] bg-[#f5f5f5] dark:bg-zinc-800 md:w-[70%]">
-              <div className="h-full w-full px-10 py-8">
-                <h1 className="text-2xl font-bold underline decoration-blue-300 underline-offset-4 md:text-3xl">
                   Volunteering
                 </h1>
                 <p className="pt-2 font-semibold">
                   RSPB - Practical Work Off Reserve
                 </p>
                 <p className="pt-2">
-                  Recently began and hope to continue volunteering with the RSPB
-                  on their upland/lowland peatland projects. This includes group
-                  practical work with the aim of removing invasive conifers from
-                  the peatland that have spread from nearby plantations.
+                  Began volunteering with the RSPB Peatland Team, helping to
+                  restore peatlands at their sites in the Antrim Hills.
+                  Practical fieldwork includes brash/scrub control, data
+                  collection and site feature identification. This has also
+                  allowed me to develop my species ID skills.
                 </p>
               </div>
             </div>

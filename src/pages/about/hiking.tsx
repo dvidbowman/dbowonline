@@ -4,12 +4,12 @@ import Image from "next/image";
 import Link from "next/link";
 import HeadingSection from "../../components/content/HeadingSection";
 
-import mournes from "../../../public/hiking/mournes.jpg";
+import mournes from "../../../public/hiking/mournes_panorama.jpg";
 import mournesRunning from "../../../public/hiking/mournes_running.jpg";
-import davidMournes from "../../../public/hiking/davidmournes.jpg";
-import toubkalSummit from "../../../public/hiking/toubkalsummit.jpg";
-import atlasOne from "../../../public/hiking/atlasone.png";
-import atlasTwo from "../../../public/hiking/atlastwo.png";
+import davidMournes from "../../../public/hiking/david_mournes.jpg";
+import toubkalSummit from "../../../public/hiking/toubkal_summit.jpg";
+import atlasOne from "../../../public/hiking/atlas_1.png";
+import atlasTwo from "../../../public/hiking/atlas_2.png";
 
 const Hiking: NextPage = () => {
   return (
@@ -97,7 +97,7 @@ const Hiking: NextPage = () => {
                 10:00AM, and the decent weather allowed for a pretty decent
                 view.
               </p>
-              <div className="flex flex-col items-center justify-between pb-8 lg:flex-row">
+              <div className="flex shrink flex-col items-center justify-between pb-8 lg:flex-row">
                 <Image
                   src={atlasOne}
                   alt="Atlas Mountains"

@@ -4,8 +4,8 @@ import Link from "next/link";
 import { useState } from "react";
 
 import profilePicture from "../../public/profile.jpg";
-import diamondback from "../../public/birding/vortexdiamondbacks.jpg";
-import horse from "../../public/horse.jpg";
+import diamondback from "../../public/birding/vortex_diamondbacks.jpg";
+import horse from "../../public/hiking/horse.jpg";
 import instruments from "../../public/music/instruments.jpg";
 
 export default function Home() {
@@ -50,11 +50,12 @@ export default function Home() {
                   thought it'd be.
                 </p>
                 <p className="text-left text-[18px] font-normal text-slight-off-white md:pl-6">
-                  I completed a <strong>BSc in Computer Science</strong> at{" "}
-                  <strong>Queen's University Belfast</strong> in 2022, and have
-                  tried to keep my skills up-to-date since. I'm always trying to
+                  I'm currently undertaking a masters in{" "}
+                  <strong>Ecological Management + Conservation Biology</strong>{" "}
+                  at Queens University Belfast after completing my undergrad in
+                  Computer Science there a few years ago. I'm always trying to
                   keep a <strong>learning-first mindset</strong> and am
-                  currently following where my passions take me!
+                  following where my passions take me!
                 </p>
               </div>
             </div>
@@ -106,7 +107,7 @@ export default function Home() {
                           music
                         </h1>
                         <p className="pt-3 text-slight-off-white">
-                          music or something
+                          a bit about music
                         </p>
                       </div>
                       <div>

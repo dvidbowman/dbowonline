@@ -133,15 +133,6 @@ export const Navbar: React.FC = () => {
             </li>
             <ul>
               <li className="ml-8 h-14 w-fit cursor-pointer border-b-blue-300 pt-4 font-light duration-[50ms] ease-out hover:scale-105 hover:border-b-2">
-                <Link
-                  href="/about/programming"
-                  onClick={() => setNavMenuOpen(false)}
-                >
-                  programming
-                </Link>
-              </li>
-
-              <li className="ml-8 h-14 w-fit cursor-pointer border-b-blue-300 pt-4 font-light duration-[50ms] ease-out hover:scale-105 hover:border-b-2">
                 <Link href="/about/music" onClick={() => setNavMenuOpen(false)}>
                   music
                 </Link>
@@ -149,10 +140,28 @@ export const Navbar: React.FC = () => {
 
               <li className="ml-8 h-14 w-fit cursor-pointer border-b-blue-300 pt-4 font-light duration-[50ms] ease-out hover:scale-105 hover:border-b-2">
                 <Link
-                  href="/about/outdoors"
+                  href="/about/hiking"
                   onClick={() => setNavMenuOpen(false)}
                 >
-                  outdoors
+                  hiking
+                </Link>
+              </li>
+
+              <li className="ml-8 h-14 w-fit cursor-pointer border-b-blue-300 pt-4 font-light duration-[50ms] ease-out hover:scale-105 hover:border-b-2">
+                <Link
+                  href="/about/birding"
+                  onClick={() => setNavMenuOpen(false)}
+                >
+                  birding
+                </Link>
+              </li>
+
+              <li className="ml-8 h-14 w-fit cursor-pointer border-b-blue-300 pt-4 font-light duration-[50ms] ease-out hover:scale-105 hover:border-b-2">
+                <Link
+                  href="/about/programming"
+                  onClick={() => setNavMenuOpen(false)}
+                >
+                  programming
                 </Link>
               </li>
             </ul>
