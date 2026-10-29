@@ -20,7 +20,7 @@ export const Footer: React.FC = () => {
 
             <div className="focus-within:text-blue-300 hover:text-blue-300">
               <Link
-                href="https://www.linkedin.com/in/david-bowman-41ba6a251/"
+                href="https://www.linkedin.com/in/djbowman-ni/"
                 rel="norefferer"
                 target="_blank"
               >
